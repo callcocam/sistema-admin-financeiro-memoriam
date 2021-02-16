@@ -18,7 +18,7 @@ class CreateUsersTable extends Migration
             $table->enum('type', ['cpf','cnpj'])->default('cpf');
             $table->string('name',255);
             $table->string('slug',255);
-            $table->string('email',255);
+            $table->string('email',255)->unique();
             $table->timestamp('email_verified_at')->nullable();
             $table->string('password',255); 
             $table->enum('status', ['deleted','draft','published'])->default('published');
