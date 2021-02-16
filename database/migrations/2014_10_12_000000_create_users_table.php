@@ -16,11 +16,11 @@ class CreateUsersTable extends Migration
         Schema::create('users', function (Blueprint $table) {           
             $table->uuid('id')->primary();
             $table->enum('type', ['cpf','cnpj'])->default('cpf');
-            $table->string('name');
-            $table->string('slug');
-            $table->string('email')->unique();
+            $table->string('name',255);
+            $table->string('slug',255);
+            $table->string('email',255)->unique();
             $table->timestamp('email_verified_at')->nullable();
-            $table->string('password'); 
+            $table->string('password',255); 
             $table->enum('status', ['deleted','draft','published'])->default('published');
             $table->rememberToken();
             $table->timestamps();
