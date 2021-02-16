@@ -32,18 +32,6 @@ class Checkbox extends BaseField
     }
 
     /**
-     * @param array $options
-     * @return $this
-     */
-    public function checkboxs($options = [])
-    {
-        $this->attribute('type', 'checkboxs');
-        $this->view('checkboxs');
-        $this->options($options);
-        return $this;
-    }
-
-    /**
      * @param $label
      * @param null $name
      * @return static

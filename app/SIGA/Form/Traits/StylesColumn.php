@@ -12,6 +12,7 @@ use Illuminate\View\AppendableAttributeValue;
 
 trait StylesColumn
 {
+    protected $span = '6';
     protected $styles = [];
     protected $attributes = [];
 
@@ -30,7 +31,7 @@ trait StylesColumn
     public function span($span)
     {
 
-        $this->styles[] = "col-span-{$span}";
+        $this->span = "col-span-{$span}";
 
         return $this;
     }

@@ -1,213 +1,272 @@
-<div class="card">
-    <div class="card-header"><strong>Basic Form</strong> Elements</div>
-    <div class="card-body">
-        <form class="form-horizontal" action="" method="post" enctype="multipart/form-data">
-            <div class="form-group row">
-                <label class="col-md-3 col-form-label">Static</label>
-                <div class="col-md-9">
-                    <p class="form-control-static">Username</p>
-                </div>
-            </div>
-            <div class="form-group row">
-                <label class="col-md-3 col-form-label" for="text-input">Text Input</label>
-                <div class="col-md-9">
-                    <input class="form-control" id="text-input" type="text" name="text-input" placeholder="Text"><span class="help-block">This is a help text</span>
-                </div>
-            </div>
-            <div class="form-group row">
-                <label class="col-md-3 col-form-label" for="email-input">Email Input</label>
-                <div class="col-md-9">
-                    <input class="form-control" id="email-input" type="email" name="email-input" placeholder="Enter Email" autocomplete="email"><span class="help-block">Please enter your email</span>
-                </div>
-            </div>
-            <div class="form-group row">
-                <label class="col-md-3 col-form-label" for="password-input">Password</label>
-                <div class="col-md-9">
-                    <input class="form-control" id="password-input" type="password" name="password-input" placeholder="Password" autocomplete="new-password"><span class="help-block">Please enter a complex password</span>
-                </div>
-            </div>
-            <div class="form-group row">
-                <label class="col-md-3 col-form-label" for="date-input">Date Input</label>
-                <div class="col-md-9">
-                    <input class="form-control" id="date-input" type="date" name="date-input" placeholder="date"><span class="help-block">Please enter a valid date</span>
-                </div>
-            </div>
-            <div class="form-group row">
-                <label class="col-md-3 col-form-label" for="disabled-input">Disabled Input</label>
-                <div class="col-md-9">
-                    <input class="form-control" id="disabled-input" type="text" name="disabled-input" placeholder="Disabled" disabled="">
-                </div>
-            </div>
-            <div class="form-group row">
-                <label class="col-md-3 col-form-label" for="textarea-input">Textarea</label>
-                <div class="col-md-9">
-                    <textarea class="form-control" id="textarea-input" name="textarea-input" rows="9" placeholder="Content.."></textarea>
-                </div>
-            </div>
-            <div class="form-group row">
-                <label class="col-md-3 col-form-label" for="select1">Select</label>
-                <div class="col-md-9">
-                    <select class="form-control" id="select1" name="select1">
-                        <option value="0">Please select</option>
-                        <option value="1">Option #1</option>
-                        <option value="2">Option #2</option>
-                        <option value="3">Option #3</option>
-                    </select>
-                </div>
-            </div>
-            <div class="form-group row">
-                <label class="col-md-3 col-form-label" for="select2">Select Large</label>
-                <div class="col-md-9">
-                    <select class="form-control form-control-lg" id="select2" name="select2">
-                        <option value="0">Please select</option>
-                        <option value="1">Option #1</option>
-                        <option value="2">Option #2</option>
-                        <option value="3">Option #3</option>
-                    </select>
-                </div>
-            </div>
-            <div class="form-group row">
-                <label class="col-md-3 col-form-label" for="select3">Select Small</label>
-                <div class="col-md-9">
-                    <select class="form-control form-control-sm" id="select3" name="select3">
-                        <option value="0">Please select</option>
-                        <option value="1">Option #1</option>
-                        <option value="2">Option #2</option>
-                        <option value="3">Option #3</option>
-                    </select>
-                </div>
-            </div>
-            <div class="form-group row">
-                <label class="col-md-3 col-form-label" for="disabledSelect">Disabled Select</label>
-                <div class="col-md-9">
-                    <select class="form-control" id="disabledSelect" disabled="">
-                        <option value="0">Please select</option>
-                        <option value="1">Option #1</option>
-                        <option value="2">Option #2</option>
-                        <option value="3">Option #3</option>
-                    </select>
-                </div>
-            </div>
-            <div class="form-group row">
-                <label class="col-md-3 col-form-label" for="multiple-select">Multiple select</label>
-                <div class="col-md-9">
-                    <select class="form-control" id="multiple-select" name="multiple-select" size="5" multiple="">
-                        <option value="1">Option #1</option>
-                        <option value="2">Option #2</option>
-                        <option value="3">Option #3</option>
-                        <option value="4">Option #4</option>
-                        <option value="5">Option #5</option>
-                        <option value="6">Option #6</option>
-                        <option value="7">Option #7</option>
-                        <option value="8">Option #8</option>
-                        <option value="9">Option #9</option>
-                        <option value="10">Option #10</option>
-                    </select>
-                </div>
-            </div>
-            <div class="form-group row">
-                <label class="col-md-3 col-form-label">Radios</label>
-                <div class="col-md-9 col-form-label">
-                    <div class="form-check">
-                        <input class="form-check-input" id="radio1" type="radio" value="radio1" name="radios">
-                        <label class="form-check-label" for="radio1">Option 1</label>
-                    </div>
-                    <div class="form-check">
-                        <input class="form-check-input" id="radio2" type="radio" value="radio2" name="radios">
-                        <label class="form-check-label" for="radio2">Option 2</label>
-                    </div>
-                    <div class="form-check">
-                        <input class="form-check-input" id="radio3" type="radio" value="radio2" name="radios">
-                        <label class="form-check-label" for="radio3">Option 3</label>
-                    </div>
-                </div>
-            </div>
-            <div class="form-group row">
-                <label class="col-md-3 col-form-label">Inline Radios</label>
-                <div class="col-md-9 col-form-label">
-                    <div class="form-check form-check-inline mr-1">
-                        <input class="form-check-input" id="inline-radio1" type="radio" value="option1" name="inline-radios">
-                        <label class="form-check-label" for="inline-radio1">One</label>
-                    </div>
-                    <div class="form-check form-check-inline mr-1">
-                        <input class="form-check-input" id="inline-radio2" type="radio" value="option2" name="inline-radios">
-                        <label class="form-check-label" for="inline-radio2">Two</label>
-                    </div>
-                    <div class="form-check form-check-inline mr-1">
-                        <input class="form-check-input" id="inline-radio3" type="radio" value="option3" name="inline-radios">
-                        <label class="form-check-label" for="inline-radio3">Three</label>
-                    </div>
-                </div>
-            </div>
-            <div class="form-group row">
-                <label class="col-md-3 col-form-label">Checkboxes</label>
-                <div class="col-md-9 col-form-label">
-                    <div class="form-check checkbox">
-                        <input class="form-check-input" id="check1" type="checkbox" value="">
-                        <label class="form-check-label" for="check1">Option 1</label>
-                    </div>
-                    <div class="form-check checkbox">
-                        <input class="form-check-input" id="check2" type="checkbox" value="">
-                        <label class="form-check-label" for="check2">Option 2</label>
-                    </div>
-                    <div class="form-check checkbox">
-                        <input class="form-check-input" id="check3" type="checkbox" value="">
-                        <label class="form-check-label" for="check3">Option 3</label>
-                    </div>
-                </div>
-            </div>
-            <div class="form-group row">
-                <label class="col-md-3 col-form-label">Inline Checkboxes</label>
-                <div class="col-md-9 col-form-label">
-                    <div class="form-check form-check-inline mr-1">
-                        <input class="form-check-input" id="inline-checkbox1" type="checkbox" value="check1">
-                        <label class="form-check-label" for="inline-checkbox1">One</label>
-                    </div>
-                    <div class="form-check form-check-inline mr-1">
-                        <input class="form-check-input" id="inline-checkbox2" type="checkbox" value="check2">
-                        <label class="form-check-label" for="inline-checkbox2">Two</label>
-                    </div>
-                    <div class="form-check form-check-inline mr-1">
-                        <input class="form-check-input" id="inline-checkbox3" type="checkbox" value="check3">
-                        <label class="form-check-label" for="inline-checkbox3">Three</label>
-                    </div>
-                </div>
-            </div>
-            <div class="form-group row">
-                <label class="col-md-3 col-form-label" for="file-input">File input</label>
-                <div class="col-md-9">
-                    <input id="file-input" type="file" name="file-input">
-                </div>
-            </div>
-            <div class="form-group row">
-                <label class="col-md-3 col-form-label" for="file-multiple-input">Multiple File input</label>
-                <div class="col-md-9">
-                    <input id="file-multiple-input" type="file" name="file-multiple-input" multiple="">
-                </div>
-            </div>
-        </form>
+<!--
+  This example requires Tailwind CSS v2.0+ 
+  
+  This example requires some changes to your config:
+  
+  ```
+  // tailwind.config.js
+  module.exports = {
+    // ...
+    plugins: [
+      // ...
+      require('@tailwindcss/forms'),
+    ]
+  }
+  ```
+-->
+<div>
+  <div class="md:grid md:grid-cols-3 md:gap-6">
+    <div class="md:col-span-1">
+      <div class="px-4 sm:px-0">
+        <h3 class="text-lg font-medium leading-6 text-gray-900">Profile</h3>
+        <p class="mt-1 text-sm text-gray-600">
+          This information will be displayed publicly so be careful what you share.
+        </p>
+      </div>
     </div>
-    <div class="card-footer">
-        <button class="btn btn-sm btn-primary" type="submit"> Submit</button>
-        <button class="btn btn-sm btn-danger" type="reset"> Reset</button>
+    <div class="mt-5 md:mt-0 md:col-span-2">
+      <form action="#" method="POST">
+        <div class="shadow sm:rounded-md sm:overflow-hidden">
+          <div class="px-4 py-5 bg-white space-y-6 sm:p-6">
+            <div class="grid grid-cols-3 gap-6">
+              <div class="col-span-3 sm:col-span-2">
+                <label for="company_website" class="block text-sm font-medium text-gray-700">
+                  Website
+                </label>
+                <div class="mt-1 flex rounded-md shadow-sm">
+                  <span class="inline-flex items-center px-3 rounded-l-md border border-r-0 border-gray-300 bg-gray-50 text-gray-500 text-sm">
+                    http://
+                  </span>
+                  <input type="text" name="company_website" id="company_website" class="focus:ring-indigo-500 focus:border-indigo-500 flex-1 block w-full rounded-none rounded-r-md sm:text-sm border-gray-300" placeholder="www.example.com">
+                </div>
+              </div>
+            </div>
+
+            <div>
+              <label for="about" class="block text-sm font-medium text-gray-700">
+                About
+              </label>
+              <div class="mt-1">
+                <textarea id="about" name="about" rows="3" class="shadow-sm focus:ring-indigo-500 focus:border-indigo-500 mt-1 block w-full sm:text-sm border-gray-300 rounded-md" placeholder="you@example.com"></textarea>
+              </div>
+              <p class="mt-2 text-sm text-gray-500">
+                Brief description for your profile. URLs are hyperlinked.
+              </p>
+            </div>
+
+            <div>
+              <label class="block text-sm font-medium text-gray-700">
+                Photo
+              </label>
+              <div class="mt-2 flex items-center">
+                <span class="inline-block h-12 w-12 rounded-full overflow-hidden bg-gray-100">
+                  <svg class="h-full w-full text-gray-300" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M24 20.993V24H0v-2.996A14.977 14.977 0 0112.004 15c4.904 0 9.26 2.354 11.996 5.993zM16.002 8.999a4 4 0 11-8 0 4 4 0 018 0z" />
+                  </svg>
+                </span>
+                <button type="button" class="ml-5 bg-white py-2 px-3 border border-gray-300 rounded-md shadow-sm text-sm leading-4 font-medium text-gray-700 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
+                  Change
+                </button>
+              </div>
+            </div>
+
+            <div>
+              <label class="block text-sm font-medium text-gray-700">
+                Cover photo
+              </label>
+              <div class="mt-2 flex justify-center px-6 pt-5 pb-6 border-2 border-gray-300 border-dashed rounded-md">
+                <div class="space-y-1 text-center">
+                  <svg class="mx-auto h-12 w-12 text-gray-400" stroke="currentColor" fill="none" viewBox="0 0 48 48" aria-hidden="true">
+                    <path d="M28 8H12a4 4 0 00-4 4v20m32-12v8m0 0v8a4 4 0 01-4 4H12a4 4 0 01-4-4v-4m32-4l-3.172-3.172a4 4 0 00-5.656 0L28 28M8 32l9.172-9.172a4 4 0 015.656 0L28 28m0 0l4 4m4-24h8m-4-4v8m-12 4h.02" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                  </svg>
+                  <div class="flex text-sm text-gray-600">
+                    <label for="file-upload" class="relative cursor-pointer bg-white rounded-md font-medium text-indigo-600 hover:text-indigo-500 focus-within:outline-none focus-within:ring-2 focus-within:ring-offset-2 focus-within:ring-indigo-500">
+                      <span>Upload a file</span>
+                      <input id="file-upload" name="file-upload" type="file" class="sr-only">
+                    </label>
+                    <p class="pl-1">or drag and drop</p>
+                  </div>
+                  <p class="text-xs text-gray-500">
+                    PNG, JPG, GIF up to 10MB
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="px-4 py-3 bg-gray-50 text-right sm:px-6">
+            <button type="submit" class="inline-flex justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
+              Save
+            </button>
+          </div>
+        </div>
+      </form>
     </div>
+  </div>
 </div>
 
-<div class="form-row">
-    <div class="col-3">
-        <label>Single Select</label>
-        <select class="c-multi-select" id="select-1" tabindex="-1" style="display: none;"><option value="0">enhancement</option><option value="1">bug</option><option value="2">duplicate</option><option value="3">invalid</option><optgroup label="group"><option value="4">enhancement2</option><option value="5">bug2</option></optgroup></select><div class="c-multi-select"><span class="c-multi-select-selection" style="display: none;">duplicate</span><input class="c-multi-select-search" placeholder="duplicate"><div class="c-multi-select-options"><div class="c-multi-select-option" data-value="0" tabindex="0" style="">enhancement</div><div class="c-multi-select-option" data-value="1" tabindex="0" style="">bug</div><div class="c-multi-select-option c-multi-selected" data-value="2" tabindex="0">duplicate</div><div class="c-multi-select-option" data-value="3" tabindex="0">invalid</div><div class="c-multi-select-optgroup" style=""><div class="c-multi-select-optgroup-label">group</div><div class="c-multi-select-option" data-value="4" tabindex="0" style="">enhancement2</div><div class="c-multi-select-option" data-value="5" tabindex="0" style="">bug2</div></div></div></div>
+<div class="hidden sm:block" aria-hidden="true">
+  <div class="py-5">
+    <div class="border-t border-gray-200"></div>
+  </div>
+</div>
+
+<div class="mt-10 sm:mt-0">
+  <div class="md:grid md:grid-cols-3 md:gap-6">
+    <div class="md:col-span-1">
+      <div class="px-4 sm:px-0">
+        <h3 class="text-lg font-medium leading-6 text-gray-900">Personal Information</h3>
+        <p class="mt-1 text-sm text-gray-600">
+          Use a permanent address where you can receive mail.
+        </p>
+      </div>
     </div>
-    <div class="col-3">
-        <label>Multiple Select - text selection</label>
-        <select class="c-multi-select" id="select-2" multiple="" tabindex="-1" style="display: none;"><option value="0">enhancement</option><option value="1">bug</option><option value="2">duplicate</option><option value="3">invalid</option><optgroup label="group"><option value="4">enhancement2</option><option value="5">bug2</option></optgroup></select><div class="c-multi-select c-multi-select-multiple"><span class="c-multi-select-selection" style="">duplicate</span><input class="c-multi-select-search" placeholder="" size="1"><div class="c-multi-select-options"><div class="c-multi-select-option" data-value="0" tabindex="0" style="">enhancement</div><div class="c-multi-select-option" data-value="1" tabindex="0" style="">bug</div><div class="c-multi-select-option c-multi-selected" data-value="2" tabindex="0">duplicate</div><div class="c-multi-select-option" data-value="3" tabindex="0">invalid</div><div class="c-multi-select-optgroup" style=""><div class="c-multi-select-optgroup-label">group</div><div class="c-multi-select-option" data-value="4" tabindex="0" style="">enhancement2</div><div class="c-multi-select-option" data-value="5" tabindex="0" style="">bug2</div></div></div></div>
+    <div class="mt-5 md:mt-0 md:col-span-2">
+      <form action="#" method="POST">
+        <div class="shadow overflow-hidden sm:rounded-md">
+          <div class="px-4 py-5 bg-white sm:p-6">
+            <div class="grid grid-cols-6 gap-6">
+              <div class="col-span-6 sm:col-span-3">
+                <label for="first_name" class="block text-sm font-medium text-gray-700">First name</label>
+                <input type="text" name="first_name" id="first_name" autocomplete="given-name" class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md">
+              </div>
+
+              <div class="col-span-6 sm:col-span-3">
+                <label for="last_name" class="block text-sm font-medium text-gray-700">Last name</label>
+                <input type="text" name="last_name" id="last_name" autocomplete="family-name" class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md">
+              </div>
+
+              <div class="col-span-6 sm:col-span-4">
+                <label for="email_address" class="block text-sm font-medium text-gray-700">Email address</label>
+                <input type="text" name="email_address" id="email_address" autocomplete="email" class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md">
+              </div>
+
+              <div class="col-span-6 sm:col-span-3">
+                <label for="country" class="block text-sm font-medium text-gray-700">Country / Region</label>
+                <select id="country" name="country" autocomplete="country" class="mt-1 block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
+                  <option>United States</option>
+                  <option>Canada</option>
+                  <option>Mexico</option>
+                </select>
+              </div>
+
+              <div class="col-span-6">
+                <label for="street_address" class="block text-sm font-medium text-gray-700">Street address</label>
+                <input type="text" name="street_address" id="street_address" autocomplete="street-address" class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md">
+              </div>
+
+              <div class="col-span-6 sm:col-span-6 lg:col-span-2">
+                <label for="city" class="block text-sm font-medium text-gray-700">City</label>
+                <input type="text" name="city" id="city" class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md">
+              </div>
+
+              <div class="col-span-6 sm:col-span-3 lg:col-span-2">
+                <label for="state" class="block text-sm font-medium text-gray-700">State / Province</label>
+                <input type="text" name="state" id="state" class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md">
+              </div>
+
+              <div class="col-span-6 sm:col-span-3 lg:col-span-2">
+                <label for="postal_code" class="block text-sm font-medium text-gray-700">ZIP / Postal</label>
+                <input type="text" name="postal_code" id="postal_code" autocomplete="postal-code" class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md">
+              </div>
+            </div>
+          </div>
+          <div class="px-4 py-3 bg-gray-50 text-right sm:px-6">
+            <button type="submit" class="inline-flex justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
+              Save
+            </button>
+          </div>
+        </div>
+      </form>
     </div>
-    <div class="col-3">
-        <label>Multiple Select - tag selection</label>
-        <select class="c-multi-select" id="select-3" multiple="" tabindex="-1" style="display: none;"><option value="0">enhancement</option><option value="1">bug</option><option value="2">duplicate</option><option value="3">invalid</option><optgroup label="group"><option value="4">enhancement2</option><option value="5">bug2</option></optgroup></select><div class="c-multi-select c-multi-select-multiple c-multi-select-selection-tags"><span class="c-multi-select-selection" style=""><span class="c-multi-select-tag" data-value="2">duplicate<span class="c-multi-select-tag-delete close" aria-label="Close"><span aria-hidden="true">×</span></span></span></span><input class="c-multi-select-search" placeholder="" size="2"><div class="c-multi-select-options"><div class="c-multi-select-option" data-value="0" tabindex="0" style="display: none;">enhancement</div><div class="c-multi-select-option" data-value="1" tabindex="0" style="display: none;">bug</div><div class="c-multi-select-option c-multi-selected" data-value="2" tabindex="0">duplicate</div><div class="c-multi-select-option" data-value="3" tabindex="0">invalid</div><div class="c-multi-select-optgroup" style="display: none;"><div class="c-multi-select-optgroup-label">group</div><div class="c-multi-select-option" data-value="4" tabindex="0" style="display: none;">enhancement2</div><div class="c-multi-select-option" data-value="5" tabindex="0" style="display: none;">bug2</div></div></div></div>
+  </div>
+</div>
+
+<div class="hidden sm:block" aria-hidden="true">
+  <div class="py-5">
+    <div class="border-t border-gray-200"></div>
+  </div>
+</div>
+
+<div class="mt-10 sm:mt-0">
+  <div class="md:grid md:grid-cols-3 md:gap-6">
+    <div class="md:col-span-1">
+      <div class="px-4 sm:px-0">
+        <h3 class="text-lg font-medium leading-6 text-gray-900">Notifications</h3>
+        <p class="mt-1 text-sm text-gray-600">
+          Decide which communications you'd like to receive and how.
+        </p>
+      </div>
     </div>
-    <div class="col-3">
-        <label>Multiple Select - counter selection</label>
-        <select class="c-multi-select" id="select-4" multiple="" tabindex="-1" style="display: none;"><option value="0">enhancement</option><option value="1">bug</option><option value="2">duplicate</option><option value="3">invalid</option><optgroup label="group"><option value="4">enhancement2</option><option value="5">bug2</option></optgroup></select><div class="c-multi-select c-multi-select-multiple"><span class="c-multi-select-selection" style="display: none;">2 item(s) selected</span><input class="c-multi-select-search" placeholder="2 item(s) selected"><div class="c-multi-select-options"><div class="c-multi-select-option" data-value="0" tabindex="0" style="display: none;">enhancement</div><div class="c-multi-select-option" data-value="1" tabindex="0" style="display: none;">bug</div><div class="c-multi-select-option c-multi-selected" data-value="2" tabindex="0">duplicate</div><div class="c-multi-select-option c-multi-selected" data-value="3" tabindex="0">invalid</div><div class="c-multi-select-optgroup" style="display: none;"><div class="c-multi-select-optgroup-label">group</div><div class="c-multi-select-option" data-value="4" tabindex="0" style="display: none;">enhancement2</div><div class="c-multi-select-option" data-value="5" tabindex="0" style="display: none;">bug2</div></div></div></div>
+    <div class="mt-5 md:mt-0 md:col-span-2">
+      <form action="#" method="POST">
+        <div class="shadow overflow-hidden sm:rounded-md">
+          <div class="px-4 py-5 bg-white space-y-6 sm:p-6">
+            <fieldset>
+              <legend class="text-base font-medium text-gray-900">By Email</legend>
+              <div class="mt-4 space-y-4">
+                <div class="flex items-start">
+                  <div class="flex items-center h-5">
+                    <input id="comments" name="comments" type="checkbox" class="focus:ring-indigo-500 h-4 w-4 text-indigo-600 border-gray-300 rounded">
+                  </div>
+                  <div class="ml-3 text-sm">
+                    <label for="comments" class="font-medium text-gray-700">Comments</label>
+                    <p class="text-gray-500">Get notified when someones posts a comment on a posting.</p>
+                  </div>
+                </div>
+                <div class="flex items-start">
+                  <div class="flex items-center h-5">
+                    <input id="candidates" name="candidates" type="checkbox" class="focus:ring-indigo-500 h-4 w-4 text-indigo-600 border-gray-300 rounded">
+                  </div>
+                  <div class="ml-3 text-sm">
+                    <label for="candidates" class="font-medium text-gray-700">Candidates</label>
+                    <p class="text-gray-500">Get notified when a candidate applies for a job.</p>
+                  </div>
+                </div>
+                <div class="flex items-start">
+                  <div class="flex items-center h-5">
+                    <input id="offers" name="offers" type="checkbox" class="focus:ring-indigo-500 h-4 w-4 text-indigo-600 border-gray-300 rounded">
+                  </div>
+                  <div class="ml-3 text-sm">
+                    <label for="offers" class="font-medium text-gray-700">Offers</label>
+                    <p class="text-gray-500">Get notified when a candidate accepts or rejects an offer.</p>
+                  </div>
+                </div>
+              </div>
+            </fieldset>
+            <fieldset>
+              <div>
+                <legend class="text-base font-medium text-gray-900">Push Notifications</legend>
+                <p class="text-sm text-gray-500">These are delivered via SMS to your mobile phone.</p>
+              </div>
+              <div class="mt-4 space-y-4">
+                <div class="flex items-center">
+                  <input id="push_everything" name="push_notifications" type="radio" class="focus:ring-indigo-500 h-4 w-4 text-indigo-600 border-gray-300">
+                  <label for="push_everything" class="ml-3 block text-sm font-medium text-gray-700">
+                    Everything
+                  </label>
+                </div>
+                <div class="flex items-center">
+                  <input id="push_email" name="push_notifications" type="radio" class="focus:ring-indigo-500 h-4 w-4 text-indigo-600 border-gray-300">
+                  <label for="push_email" class="ml-3 block text-sm font-medium text-gray-700">
+                    Same as email
+                  </label>
+                </div>
+                <div class="flex items-center">
+                  <input id="push_nothing" name="push_notifications" type="radio" class="focus:ring-indigo-500 h-4 w-4 text-indigo-600 border-gray-300">
+                  <label for="push_nothing" class="ml-3 block text-sm font-medium text-gray-700">
+                    No push notifications
+                  </label>
+                </div>
+              </div>
+            </fieldset>
+          </div>
+          <div class="px-4 py-3 bg-gray-50 text-right sm:px-6">
+            <button type="submit" class="inline-flex justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
+              Save
+            </button>
+          </div>
+        </div>
+      </form>
     </div>
+  </div>
 </div>
