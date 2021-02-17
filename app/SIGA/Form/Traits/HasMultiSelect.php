@@ -45,14 +45,14 @@ trait HasMultiSelect
         return $this->MultselectSelected;
     }
 
-    public function isSelected($value)
+    public function isSelected($value, $class='bg-gray-200 rounded')
     {
-        return Arr::exists($this->MultselectSelected, $value) ? 'c-multi-selected' : '';
+        return Arr::exists($this->MultselectSelected, $value) ? $class : '';
     }
 
     public function getValueOptionsCountProperty()
     {
-        return count($this->MultselectSelected);
+        return count(array_filter($this->MultselectSelected));
     }
 
     protected function clearMultSelectSearch($field)
@@ -65,7 +65,6 @@ trait HasMultiSelect
 
     protected function isMultSelectSearch($field)
     {
-
 
         if ($this->MultselectSearch && Arr::exists($this->MultselectSearch, $field)) {
             return trim($this->MultselectSearch[$field]);

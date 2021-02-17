@@ -15,7 +15,7 @@ class Radio extends BaseField
 {
 
     protected $class = 'mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md';
-
+    protected $placeholder;
     /**
      * Field constructor.
      * @param $label
@@ -38,6 +38,11 @@ class Radio extends BaseField
     public static function make($label, $name = null)
     {
         return new static($label, $name);
+    }
+
+    public function placeholder($placeholder){
+        $this->placeholder = $placeholder;
+        return $this;
     }
 
 }

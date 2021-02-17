@@ -35,13 +35,13 @@
         <div class="flex  w-80 justify-between">
             @if($this->createLink())
                 <a title="{{ _('Create new register') }}" href="{{ $this->createLink() }}"
-                   class="flex py-2 px-4 shadow rounded-md bg-vuexy-700 text-white font-bold ml-2">
+                   class="btn btn-defaul">
                     <x-c-icon class="h-5 w-5" icon="plus" stroke="currentColor"/>
                     <span class="hidden md:block">{{ _('Create') }}</span> </a>
             @endif
             @if($this->reloadLink())
                 <a title="{{ _('Reload page') }}" href="{{ $this->reloadLink() }}"
-                   class="flex py-2 px-4 shadow rounded-md bg-yellow-400 text-gray-100 font-bold">
+                   class="btn btn-defaul">
                     <x-c-icon class="mt-1 h-5 w-5 mr-2" icon="loop" stroke="currentColor"/>
                     <span class="hidden md:block">{{ _('Reload') }}</span></a>
             @endif

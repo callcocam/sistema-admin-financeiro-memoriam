@@ -44,10 +44,10 @@ trait HasSingleSelect
         return $this->SingleselectSelected;
     }
 
-    public function isSingleSelected($value, $attribute)
+    public function isSingleSelected($value, $attribute, $class= '')
     {
         $attribute = Str::afterLast($attribute, '.');
-        return isset($this->form_data[$attribute]) && $this->form_data[$attribute] == $value ? 'c-multi-selected' : '';
+        return isset($this->form_data[$attribute]) && $this->form_data[$attribute] == $value ? $class : '';
     }
 
     protected function clearSingleSelectSearch($field)

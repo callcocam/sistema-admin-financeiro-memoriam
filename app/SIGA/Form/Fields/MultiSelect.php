@@ -12,7 +12,7 @@ use SIGA\Form\BaseField;
 class MultiSelect extends BaseField
 {
 
-    protected $class = 'c-multi-select';
+    protected $class = 'mt-1 focus:ring-indigo-500 focus:border-indigo-500  shadow-sm sm:text-sm border-gray-300 rounded-md mx-1';
 
     /**
      * Field constructor.

@@ -39,8 +39,14 @@ Route::middleware('auth')->group(function (){
 
     Route::get('minha-conta', \App\Http\Livewire\Users\Profile::class)->name('admin.profile.index');
     Route::get('usuarios', \App\Http\Livewire\Users\ListComponent::class)->name('admin.users.index');
+  
     Route::get('usuarios/{user}/edit', \App\Http\Livewire\Users\EditComponent::class)->name('admin.users.edit');
     Route::get('usuarios/{user}/show', \App\Http\Livewire\Users\ShowComponent::class)->name('admin.users.show');
+
+    
+    Route::get('roles', \App\Http\Livewire\Roles\ListComponent::class)->name('admin.roles.index');
+    Route::get('roles/{role}/edit', \App\Http\Livewire\Roles\EditComponent::class)->name('admin.roles.edit');
+    //Route::get('roles/{role}/show', \App\Http\Livewire\Roles\ShowComponent::class)->name('admin.roles.show');
 
 });
 

@@ -23,3 +23,37 @@
 ::-webkit-scrollbar-thumb:hover{
   background: #718096;
 }
+
+
+.btn{
+  @apply inline-flex;
+  @apply items-center;
+  @apply px-4; 
+  @apply py-2;
+  @apply border;
+  @apply rounded-md;
+  @apply shadow-sm;
+  @apply text-sm;
+  @apply font-medium;
+  @apply mr-2;  
+}
+
+.btn .btn-default{
+  @apply border-gray-300;
+  @apply text-gray-700;
+  @apply bg-white;
+}
+.btn-default:hover{
+  @apply bg-gray-50;
+}
+
+.btn-default:focus{
+  @apply outline-none;
+  @apply ring-2;
+  @apply ring-offset-2;
+  @apply ring-indigo-500;
+}
+
+.z-100{
+  z-index: 1000!important;
+}

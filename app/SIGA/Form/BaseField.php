@@ -41,6 +41,7 @@ class BaseField
         $this->name = $name ?? Str::snake(Str::lower($label));
         $this->key = sprintf("form_data.%s", $this->name);
         $this->attribute('name', $this->name);
+        $this->attribute('id', $this->name);
     }
 
     /**

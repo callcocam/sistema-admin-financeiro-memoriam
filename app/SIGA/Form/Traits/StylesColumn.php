@@ -30,6 +30,12 @@ trait StylesColumn
 
     public function span($span)
     {
+        if($span>6){
+            $span = 6;
+        }
+        if($span<1){
+            $span = 6;
+        }
 
         $this->span = "col-span-{$span}";
 

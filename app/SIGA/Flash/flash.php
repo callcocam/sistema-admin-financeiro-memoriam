@@ -5,30 +5,31 @@
  * https://www.sigasmart.com.br
  */
 return [
+    'theme'=>'tailwind',
     'views' => [
         'container' => 'flash::container',
-        'message' => 'flash::message',
-        'overlay' => 'flash::overlay',
+        'message' => 'flash::tailwind.message',
+        'overlay' => 'flash::tailwind.overlay',
     ],
     'styles' => [
         'info' => [
-            'color' => 'info',
+            'color' => 'blue',
             'icon' => 'fas fa-info-circle',
         ],
         'success' => [
-            'color' => 'success',
+            'color' => 'green',
             'icon' => 'fas fa-info-circle',
         ],
         'warning' => [
-            'color' => 'warning',
+            'color' => 'yellow',
             'icon' => 'fas fa-info-circle',
         ],
         'danger' => [
-            'color' => 'danger',
+            'color' => 'red',
             'icon' => 'fas fa-info-circle',
         ],
         'overlay' => [
-            'color' => 'danger',
+            'color' => 'red',
             'icon' => 'fas fa-info-circle',
         ],
     ]
