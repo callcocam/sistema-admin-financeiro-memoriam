@@ -10,14 +10,11 @@ namespace SIGA;
 
 use App\Modules\Console\Commands\TenantsArtisanCommand;
 use Illuminate\Support\ServiceProvider;
-// use SIGA\Console\Commands\CreateCommand;
-// use SIGA\Console\Commands\EditCommand;
-// use SIGA\Console\Commands\LivewireCommand;
-// use SIGA\Console\Commands\ModelCommand;
-// use SIGA\Console\Commands\ShowCommand;
-// use SIGA\Console\Commands\TableCommand;
-// use SIGA\Console\Commands\UpdateMenusCommand;
-// use SIGA\Console\Commands\UpdatePasswordCommand;
+use SIGA\Console\Commands\CreateCommand;
+use SIGA\Console\Commands\EditCommand;
+use SIGA\Console\Commands\LivewireCommand;
+use SIGA\Console\Commands\ShowCommand;
+use SIGA\Console\Commands\TableCommand;
 use SIGA\Acl\AclServiceProvider;
 use SIGA\Flash\FlashServiceProvider;
 use SIGA\Table\LivewireTablesServiceProvide;
@@ -40,15 +37,11 @@ class SigaLivewireServiceProvider extends ServiceProvider
        if ($this->app->runningInConsole()){
 
            $this->commands([
-            //    LivewireCommand::class,
-            //    ModelCommand::class,
-            //    TableCommand::class,
-            //    CreateCommand::class,
-            //    EditCommand::class,
-            //    ShowCommand::class,
-            //    TenantsArtisanCommand::class,
-            //    UpdatePasswordCommand::class,
-            //    UpdateMenusCommand::class
+               LivewireCommand::class,
+               TableCommand::class,
+               CreateCommand::class,
+               EditCommand::class,
+               ShowCommand::class,
            ]);
        }
 

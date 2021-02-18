@@ -1,0 +1,31 @@
+<?php
+/**
+ * Created by Claudio Campos.
+ * User: callcocam@gmail.com, contato@sigasmart.com.br
+ * https://www.sigasmart.com.br
+ */
+
+namespace [namespace];
+
+use App\Modes\[model];
+use SIGA\Form\FormComponent;
+use Illuminate\Database\Eloquent\Builder;
+
+class [class] extends FormComponent
+{
+
+        protected $route = "[routes]";
+
+        public function mount([model] $[param])
+        {
+           $this->setFormProperties($[param]);
+        }
+
+        /**
+        * @return array
+        */
+        public function fields()
+        {
+            return [];
+        }
+}

@@ -37,6 +37,7 @@ Route::middleware('auth')->group(function (){
     })->name('logout');
 
 
+    Route::get('icons', \App\Http\Livewire\Utils\Icons::class)->name('admin.icons.index');
     Route::get('minha-conta', \App\Http\Livewire\Users\Profile::class)->name('admin.profile.index');
     Route::get('usuarios', \App\Http\Livewire\Users\ListComponent::class)->name('admin.users.index');
   
@@ -47,6 +48,15 @@ Route::middleware('auth')->group(function (){
     Route::get('roles', \App\Http\Livewire\Roles\ListComponent::class)->name('admin.roles.index');
     Route::get('roles/{role}/edit', \App\Http\Livewire\Roles\EditComponent::class)->name('admin.roles.edit');
     //Route::get('roles/{role}/show', \App\Http\Livewire\Roles\ShowComponent::class)->name('admin.roles.show');
+    
+    Route::get('permissions', \App\Http\Livewire\Permissions\ListComponent::class)->name('admin.permissions.index');
+    Route::get('permissions/{permission}/edit', \App\Http\Livewire\Permissions\EditComponent::class)->name('admin.permissions.edit');
+    //Route::get('roles/{role}/show', \App\Http\Livewire\Permissions\ShowComponent::class)->name('admin.roles.show');
+ 
+    Route::get('planos', \App\Http\Livewire\Plans\ListComponent::class)->name('admin.plans.index');
+    Route::get('planos/create', \App\Http\Livewire\Plans\CreateComponent::class)->name('admin.plans.create');
+    Route::get('planos/{plan}/edit', \App\Http\Livewire\Plans\EditComponent::class)->name('admin.plans.edit');
+    //Route::get('roles/{role}/show', \App\Http\Livewire\Permissions\ShowComponent::class)->name('admin.roles.show');
 
 });
 
