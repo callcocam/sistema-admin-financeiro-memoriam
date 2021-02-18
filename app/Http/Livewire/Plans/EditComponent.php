@@ -35,4 +35,5 @@ class EditComponent extends FormComponent
                 Textarea::make('Description'),
             ];
         }
+
 }

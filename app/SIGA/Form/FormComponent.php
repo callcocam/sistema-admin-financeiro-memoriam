@@ -51,6 +51,12 @@ class FormComponent extends Component
         $this->form_data[$data['field']] = $data['value'];
     }
 
+    public function title(){
+        if($this->model->exists)
+        return sprintf('Editar %s', $this->form_data['name']);
+        
+        return "Cadastrar novo registro";
+    }
 
     /**
      * @param null $model

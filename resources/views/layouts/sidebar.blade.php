@@ -29,7 +29,7 @@
         </a>
 
         <a class="flex items-center mt-4 py-2 px-6 {{ is_active('admin.permissions.index') }}" href="{{ route('admin.permissions.index') }}">
-        <x-c-icon class="h-6 w-6" icon="lock-locked" stroke="currentColor"></x-c-icon>
+        <x-c-icon class="h-6 w-6" icon="lock-unlocked" stroke="currentColor"></x-c-icon>
             <span class="mx-3">{{ __('Permissions')}} </span>
         </a>
 

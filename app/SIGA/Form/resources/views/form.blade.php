@@ -1,7 +1,7 @@
 <div class="mr-4 ml-4">
   <form class="form-horizontal" wire:submit.prevent="save">
     <div class="shadow sm:rounded-md sm:overflow-hidden bg-white">
-    <h2 class="p-6 text-lg text-gray-700 font-semibold capitalize"> <strong>Basic Form</strong> Elements</h2>        
+    <h2 class="p-6 text-lg text-gray-700 font-semibold capitalize"> {{ $this->title() }}</h2>        
         <div class="grid grid-cols-6 gap-x-6 gap-y-2 px-4 py-5 sm:p-6">
           @foreach($fields as $field)
             @include('laravel-livewire-forms::fields.' . $field->view)
