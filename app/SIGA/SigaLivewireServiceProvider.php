@@ -15,6 +15,7 @@ use SIGA\Console\Commands\EditCommand;
 use SIGA\Console\Commands\LivewireCommand;
 use SIGA\Console\Commands\ShowCommand;
 use SIGA\Console\Commands\TableCommand;
+use SIGA\Console\Commands\DefaultCommand;
 use SIGA\Acl\AclServiceProvider;
 use SIGA\Flash\FlashServiceProvider;
 use SIGA\Table\LivewireTablesServiceProvide;
@@ -42,6 +43,7 @@ class SigaLivewireServiceProvider extends ServiceProvider
                CreateCommand::class,
                EditCommand::class,
                ShowCommand::class,
+               DefaultCommand::class,
            ]);
        }
 

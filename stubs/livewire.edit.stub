@@ -7,9 +7,8 @@
 
 namespace [namespace];
 
-use App\Modes\[model];
+use App\Models\[model];
 use SIGA\Form\FormComponent;
-use Illuminate\Database\Eloquent\Builder;
 
 class [class] extends FormComponent
 {

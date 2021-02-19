@@ -7,26 +7,17 @@
 
 namespace App\Http\Livewire\Utils;
 
-use Illuminate\Filesystem\Filesystem;
 use Illuminate\Support\Str;
 use Livewire\Component;
-use Symfony\Component\Finder\SplFileInfo;
+use App\Http\Livewire\AbstractComponent;
 
-class Icons extends Component
+class Icons extends AbstractComponent
 {
     public $search;
 
-    public function render()
+    public function view()
     {
-         return view('livewire.utils.icons')->layout('layouts.app',[
-            'page'=>[
-                'production' => false,
-                'baseUrl' => '',
-                'title' => 'Dashboard',
-                'description' => 'Dashboard template built with tailwindcss 🛩',
-                'collections' => [],
-            ]
-        ]);
+         return 'livewire.utils.icons';
     }
 
     public function getIconsProperty()

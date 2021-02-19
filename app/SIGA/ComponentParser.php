@@ -15,7 +15,7 @@ use Illuminate\Support\Str;
 class ComponentParser extends ComponentParserAlias
 {
 
-    protected $templateStub = 'table.stub';
+    protected $templateStub = 'table';
     protected $model;
     protected $routes;
 

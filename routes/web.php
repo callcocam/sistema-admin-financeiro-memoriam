@@ -14,7 +14,7 @@ use Illuminate\Http\Request;
 |
 */
 Route::middleware('auth')->group(function (){
-   
+
     Route::get('/', function () {
         return view('welcome');
     })->name('home');
@@ -40,23 +40,28 @@ Route::middleware('auth')->group(function (){
     Route::get('icons', \App\Http\Livewire\Utils\Icons::class)->name('admin.icons.index');
     Route::get('minha-conta', \App\Http\Livewire\Users\Profile::class)->name('admin.profile.index');
     Route::get('usuarios', \App\Http\Livewire\Users\ListComponent::class)->name('admin.users.index');
-  
+
     Route::get('usuarios/{user}/edit', \App\Http\Livewire\Users\EditComponent::class)->name('admin.users.edit');
     Route::get('usuarios/{user}/show', \App\Http\Livewire\Users\ShowComponent::class)->name('admin.users.show');
 
-    
+
     Route::get('roles', \App\Http\Livewire\Roles\ListComponent::class)->name('admin.roles.index');
     Route::get('roles/{role}/edit', \App\Http\Livewire\Roles\EditComponent::class)->name('admin.roles.edit');
     //Route::get('roles/{role}/show', \App\Http\Livewire\Roles\ShowComponent::class)->name('admin.roles.show');
-    
+
     Route::get('permissions', \App\Http\Livewire\Permissions\ListComponent::class)->name('admin.permissions.index');
     Route::get('permissions/{permission}/edit', \App\Http\Livewire\Permissions\EditComponent::class)->name('admin.permissions.edit');
     //Route::get('roles/{role}/show', \App\Http\Livewire\Permissions\ShowComponent::class)->name('admin.roles.show');
- 
+
     Route::get('planos', \App\Http\Livewire\Plans\ListComponent::class)->name('admin.plans.index');
     Route::get('planos/create', \App\Http\Livewire\Plans\CreateComponent::class)->name('admin.plans.create');
     Route::get('planos/{plan}/edit', \App\Http\Livewire\Plans\EditComponent::class)->name('admin.plans.edit');
     //Route::get('roles/{role}/show', \App\Http\Livewire\Permissions\ShowComponent::class)->name('admin.roles.show');
+
+    Route::get('clientes', \App\Http\Livewire\Services\Clients\ListComponent::class)->name('admin.clients.index');
+    Route::get('api/credencials', \App\Http\Livewire\Credentials\ListComponent::class)->name('admin.credentials.index');
+    Route::get('api/credencials/create', \App\Http\Livewire\Credentials\CreateComponent::class)->name('admin.credentials.create');
+    Route::get('api/credencials/{credential}/edit', \App\Http\Livewire\Credentials\EditComponent::class)->name('admin.credentials.edit');
 
 });
 

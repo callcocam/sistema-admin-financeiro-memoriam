@@ -11,10 +11,18 @@
                         <table class="{{ $this->getOption('tailwind.classes.table') }}">
                             @include(table_includes('thead'))
                             <tbody class="bg-white">
-                            @if($models->isEmpty())
-                                @include(table_includes('empty'))
+                            @if(is_object($models))
+                                @if($models->isEmpty())
+                                    @include(table_includes('empty'))
+                                @else
+                                    @include(table_includes('data'))
+                                @endif
                             @else
-                                @include(table_includes('data'))
+                                @if(!$models)
+                                    @include(table_includes('empty'))
+                                @else
+                                    @include(table_includes('data'))
+                                @endif
                             @endif
                             </tbody>
                             @include(table_includes('tfoot'))

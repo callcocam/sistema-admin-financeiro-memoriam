@@ -22,7 +22,8 @@ use SIGA\Table\Traits\{Exports,
     Search,
     Sorting,
     Table,
-    Yajra};
+    Yajra
+};
 use Livewire\Component;
 use Livewire\WithPagination;
 
@@ -88,10 +89,10 @@ abstract class TableComponent extends Component
      */
     public function __construct($id = null)
     {
-        $this->theme = config('laravel-livewire-tables.theme','bootstrap');
-        $this->paginationTheme = config('laravel-livewire-tables.pagination','bootstrap');
+        $this->theme = config('laravel-livewire-tables.theme', 'bootstrap');
+        $this->paginationTheme = config('laravel-livewire-tables.pagination', 'bootstrap');
 
-        $this->setOptions(array_merge($this->options, config('laravel-livewire-tables',[])));
+        $this->setOptions(array_merge($this->options, config('laravel-livewire-tables', [])));
 
         parent::__construct($id);
     }
@@ -99,7 +100,7 @@ abstract class TableComponent extends Component
     /**
      * @return \Illuminate\Database\Eloquent\Builder
      */
-    abstract public function query(): Builder;
+    abstract public function query();
 
 
     /**
@@ -120,35 +121,24 @@ abstract class TableComponent extends Component
         return 'laravel-livewire-tables::' . config('laravel-livewire-tables.theme') . '.table-component';
     }
 
-
     /**
      * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
      */
     public function render(): View
     {
-        $ThemeConfig = [
-            'page'=>[
-                'production' => false,
-                'baseUrl' => '',
-                'title' => 'Dashboard',
-                'description' => 'Dashboard template built with tailwindcss 🛩',
-                'collections' => [],
-            ]
-        ];
-
+        $page = $this->ThemeConfig();
         return view($this->view(), [
             'columns' => $this->columns(),
             'models' => $this->paginationEnabled ? $this->models()->paginate($this->perPage) : $this->models()->get(),
-        ])->layout($this->layout(),$ThemeConfig);
+        ])->layout($this->layout(), compact('page'));
     }
 
     /**
      * @return Builder
      */
-    public function models(): Builder
+    public function models()
     {
         $builder = $this->query();
-
         if ($this->searchEnabled && trim($this->search) !== '') {
             $builder->where(function (Builder $builder) {
                 foreach ($this->columns() as $column) {
@@ -168,11 +158,24 @@ abstract class TableComponent extends Component
                 }
             });
         }
-
         if (($column = $this->getColumnByAttribute($this->field)) !== false && is_callable($column->getSortCallback())) {
             return app()->call($column->getSortCallback(), ['builder' => $builder, 'direction' => $this->direction]);
         }
-
         return $builder->orderBy($this->getSortField($builder), $this->direction);
+    }
+
+    /**
+     * @param array $ThemeConfig
+     * @return array
+     */
+    protected function ThemeConfig($ThemeConfig = [])
+    {
+        return array_merge([
+            'production' => false,
+            'baseUrl' => '',
+            'title' => 'Dashboard',
+            'description' => 'Dashboard template built with tailwindcss 🛩',
+            'collections' => [],
+        ], $ThemeConfig);
     }
 }
