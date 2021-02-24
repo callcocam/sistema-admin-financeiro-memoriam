@@ -18,7 +18,9 @@ trait UuidGenerate
     {
         parent::boot();
         static::creating(function ($model) {
-            $model->id = Uuid::uuid4();
+            if (is_null($model->id)):
+                $model->id = Uuid::uuid4();
+            endif;
         });
     }
 }

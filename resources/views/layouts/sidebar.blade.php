@@ -28,6 +28,11 @@
             <span class="mx-3">{{ __('Clients')}} </span>
         </a>
 
+        <a class="flex items-center mt-4 py-2 px-6 {{ is_active('admin.providers.index') }}" href="{{ route('admin.providers.index') }}">
+        <x-c-icon class="h-6 w-6" icon="user" stroke="currentColor"></x-c-icon>
+            <span class="mx-3">{{ __('Providers')}} </span>
+        </a>
+
         <a class="flex items-center mt-4 py-2 px-6 {{ is_active('admin.roles.index') }}" href="{{ route('admin.roles.index') }}">
         <x-c-icon class="h-6 w-6" icon="lock-locked" stroke="currentColor"></x-c-icon>
             <span class="mx-3">{{ __('Roles')}} </span>
@@ -41,6 +46,16 @@
         <a class="flex items-center mt-4 py-2 px-6 {{ is_active('admin.plans.index') }}" href="{{ route('admin.plans.index') }}">
         <x-c-icon class="h-6 w-6" icon="storage" stroke="currentColor"></x-c-icon>
             <span class="mx-3">{{ __('Plans')}} </span>
+        </a>
+
+        <a class="flex items-center mt-4 py-2 px-6 {{ is_active('admin.incomes.index') }}" href="{{ route('admin.incomes.index') }}">
+        <x-c-icon class="h-6 w-6" icon="arrow-thick-to-right" stroke="currentColor"></x-c-icon>
+            <span class="mx-3">{{ __('Incomes')}} </span>
+        </a>
+
+        <a class="flex items-center mt-4 py-2 px-6 {{ is_active('admin.plans.index') }}" href="{{ route('admin.expenses.index') }}">
+        <x-c-icon class="h-6 w-6" icon="arrow-thick-to-left" stroke="currentColor"></x-c-icon>
+            <span class="mx-3">{{ __('Expenses')}} </span>
         </a>
 
         <a class="flex items-center mt-4 py-2 px-6 {{ is_active('admin.credentials.index') }}" href="{{ route('admin.credentials.index') }}">

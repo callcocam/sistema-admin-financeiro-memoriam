@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="BranchesTreeState">
     <expand>
       <path>
@@ -20,77 +23,59 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8a668215-e4c2-430c-9e6e-5fabb0fb44d0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/SIGA/HTTP/Exceptions/ServiceException.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Livewire/Companies/EditComponent.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Livewire/Companies/EditComponent.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Livewire/Companies/ListComponent.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Livewire/Companies/ListComponent.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Livewire/Permissions/CreateComponent.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Livewire/Permissions/CreateComponent.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Livewire/Permissions/EditComponent.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Livewire/Permissions/EditComponent.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Livewire/Permissions/ListComponent.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Livewire/Permissions/ListComponent.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Livewire/Plans/CreateComponent.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Livewire/Plans/CreateComponent.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Livewire/Plans/EditComponent.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Livewire/Plans/EditComponent.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Livewire/Plans/ListComponent.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Livewire/Plans/ListComponent.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Livewire/Roles/EditComponent.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Livewire/Roles/EditComponent.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Livewire/Roles/ListComponent.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Livewire/Roles/ListComponent.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Livewire/Users/EditComponent.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Livewire/Users/EditComponent.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Livewire/Users/ListComponent.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Livewire/Users/ListComponent.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Livewire/Users/Profile.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Livewire/Users/Profile.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Livewire/Users/ShowComponent.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Livewire/Users/ShowComponent.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Livewire/Utils/Icons.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Livewire/Utils/Icons.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/Plan.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Plan.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/SIGA/ComponentParser.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/SIGA/ComponentParser.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/SIGA/Console/Commands/Concerns/TenantAware.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/SIGA/Console/Commands/Concerns/TenantAware.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/SIGA/Console/Commands/CreateCommand.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/SIGA/Console/Commands/CreateCommand.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/SIGA/Console/Commands/EditCommand.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/SIGA/Console/Commands/EditCommand.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/SIGA/Console/Commands/LivewireCommand.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/SIGA/Console/Commands/LivewireCommand.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/SIGA/Console/Commands/ShowCommand.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/SIGA/Console/Commands/ShowCommand.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/SIGA/Console/Commands/TableCommand.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/SIGA/Console/Commands/TableCommand.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/SIGA/Flash/views/tailwind/container.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/SIGA/Flash/views/tailwind/container.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/SIGA/Flash/views/tailwind/message.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/SIGA/Flash/views/tailwind/message.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/SIGA/Flash/views/tailwind/overlay.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/SIGA/Flash/views/tailwind/overlay.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/SIGA/SigaLivewireServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/SIGA/SigaLivewireServiceProvider.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/SIGA/Styles.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/SIGA/Styles.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/SIGA/Table/TableComponent.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/SIGA/Table/TableComponent.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/SIGA/Table/resources/views/tailwind/includes/columns-attributes/sort.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/SIGA/Table/resources/views/tailwind/includes/columns-attributes/sort.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/SIGA/Table/resources/views/tailwind/includes/data-attributes/image.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/SIGA/Table/resources/views/tailwind/includes/data-attributes/image.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Livewire/Utils/Status.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/SIGA/Gerencianet/ApiRequest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/SIGA/Gerencianet/Auth.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/SIGA/Gerencianet/Config.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/SIGA/Gerencianet/Endpoints.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/SIGA/Gerencianet/Exception/AuthorizationException.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/SIGA/Gerencianet/Exception/GerencianetException.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/SIGA/Gerencianet/Facades/Gerencianet.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/SIGA/Gerencianet/Gerencianet.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/SIGA/Gerencianet/GerencianetServiceProvider.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/SIGA/Gerencianet/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/SIGA/Gerencianet/Request.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/SIGA/Gerencianet/Utils.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/SIGA/Gerencianet/composer.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/SIGA/Gerencianet/config.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/SIGA/Gerencianet/config/gerencianet.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/SIGA/Table/resources/views/tailwind/includes/actions/create-modal.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/SIGA/Table/resources/views/tailwind/includes/actions/create.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/SIGA/Table/resources/views/tailwind/includes/actions/reload.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/SIGA/Table/resources/views/tailwind/includes/options/buttons-modal.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/SIGA/Table/resources/views/tailwind/includes/options/buttons.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/SIGA/Table/resources/views/tailwind/includes/options/modal.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helpers.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/expenses/status.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/livewire/utils/status.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Livewire/Services/Clients/ListComponent.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Livewire/Services/Clients/ListComponent.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/SIGA/Form/FormComponent.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/SIGA/Form/FormComponent.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/SIGA/Form/resources/views/fields/select-dropdown.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/SIGA/Form/resources/views/fields/select-dropdown.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/SIGA/Scopes/UuidGenerate.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/SIGA/Scopes/UuidGenerate.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/SIGA/Table/HasUtils.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/SIGA/Table/HasUtils.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/SIGA/Table/Traits/Kill.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/SIGA/Table/Traits/Kill.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/SIGA/Table/Traits/Options.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/SIGA/Table/Traits/Options.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/SIGA/Table/config/laravel-livewire-tables.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/SIGA/Table/config/laravel-livewire-tables.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/SIGA/Table/resources/views/tailwind/includes/actions.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/SIGA/Table/resources/views/tailwind/includes/actions.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/SIGA/Table/resources/views/tailwind/includes/empty.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/SIGA/Table/resources/views/tailwind/includes/empty.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/SIGA/Table/resources/views/tailwind/includes/options.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/SIGA/Table/resources/views/tailwind/includes/options.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/SIGA/Table/resources/views/tailwind/includes/status.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/SIGA/Table/resources/views/tailwind/includes/status.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/SIGA/Table/resources/views/tailwind/table-component.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/SIGA/Table/resources/views/tailwind/table-component.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/factories/PlanFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/factories/PlanFactory.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2021_02_18_124628_create_plans_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2021_02_18_124628_create_plans_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeders/PlanSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeders/PlanSeeder.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/lang/en/form.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/lang/en/form.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/app.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gn-api-sdk-php/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/gn-api-sdk-php/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/lang/en/strings.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/lang/en/strings.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/components/form-card.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/form-card.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/layouts/sidebar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/sidebar.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/livewire/companies/edit-component.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/companies/edit-component.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/livewire/companies/list-component.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/companies/list-component.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/livewire/permissions/create-component.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/permissions/create-component.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/livewire/permissions/edit-component.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/permissions/edit-component.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/livewire/permissions/list-component.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/permissions/list-component.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/livewire/plans/create-component.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/plans/create-component.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/livewire/plans/edit-component.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/plans/edit-component.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/livewire/plans/list-component.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/plans/list-component.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/livewire/roles/edit-component.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/roles/edit-component.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/livewire/roles/list-component.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/roles/list-component.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/livewire/users/edit-component.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/users/edit-component.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/livewire/users/show-component.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/users/show-component.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/livewire/utils/icons.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/utils/icons.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/vendor/laravel-livewire-table/image.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/vendor/laravel-livewire-table/image.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/stubs/livewire.create.stub" beforeDir="false" afterPath="$PROJECT_DIR$/stubs/livewire.create.stub" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/stubs/livewire.default.stub" beforeDir="false" afterPath="$PROJECT_DIR$/stubs/livewire.default.stub" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/stubs/livewire.edit.stub" beforeDir="false" afterPath="$PROJECT_DIR$/stubs/livewire.edit.stub" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/stubs/livewire.inline.stub" beforeDir="false" afterPath="$PROJECT_DIR$/stubs/livewire.inline.stub" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/stubs/livewire.stub" beforeDir="false" afterPath="$PROJECT_DIR$/stubs/livewire.stub" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/stubs/livewire.table.stub" beforeDir="false" afterPath="$PROJECT_DIR$/stubs/livewire.table.stub" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/stubs/livewire.view.stub" beforeDir="false" afterPath="$PROJECT_DIR$/stubs/livewire.view.stub" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/stubs/migration.create.stub" beforeDir="false" afterPath="$PROJECT_DIR$/stubs/migration.create.stub" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/stubs/model.stub" beforeDir="false" afterPath="$PROJECT_DIR$/stubs/model.stub" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ComposerSettings" synchronizationState="SYNCHRONIZE">
+  <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
     <execution />
   </component>
@@ -209,6 +194,7 @@
     </include_path>
   </component>
   <component name="ProjectId" id="1ofLaZ4PJBFFNdlSEDIdWYAxE60" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -216,8 +202,26 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="WebServerToolWindowPanel.toolwindow.highlight.mappings" value="true" />
+    <property name="WebServerToolWindowPanel.toolwindow.highlight.symlinks" value="true" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.date" value="false" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.permissions" value="false" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.size" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/SIGA/Gerencianet" />
     <property name="php.override.implement.member.chooser.php.doc" value="NONE" />
+    <property name="settings.editor.selected.configurable" value="build.tools" />
+    <property name="settings.editor.splitter.proportion" value="0.2685753" />
     <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="\\wsl$\Ubuntu-20.04\var\www\dionata\sistema-admin-financeiro-memoriam\app\SIGA\Gerencianet" />
+      <recent name="\\wsl$\Ubuntu-20.04\var\www\dionata\sistema-admin-financeiro-memoriam\app\SIGA\Gerencianet\Exception" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="\\wsl$\Ubuntu-20.04\var\www\dionata\sistema-admin-financeiro-memoriam\app\Http\Livewire\Expenses" />
+      <recent name="\\wsl$\Ubuntu-20.04\var\www\dionata\sistema-admin-financeiro-memoriam\app\SIGA\Table\resources\views\tailwind\includes\options" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration name="phpunit.xml" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
@@ -233,7 +237,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1613672779860</updated>
-      <workItem from="1613672781246" duration="8973000" />
+      <workItem from="1613672781246" duration="12324000" />
+      <workItem from="1614084516604" duration="28962000" />
     </task>
     <servers />
   </component>
@@ -250,23 +255,6 @@
         </entry>
       </map>
     </option>
-  </component>
-  <component name="WindowStateProjectService">
-    <state x="511" y="27" key="#com.intellij.ide.util.MemberChooser" timestamp="1613677349995">
-      <screen x="0" y="0" width="1600" height="984" />
-    </state>
-    <state x="511" y="27" key="#com.intellij.ide.util.MemberChooser/1600.0.1280.680/0.0.1600.984@0.0.1600.984" timestamp="1613677349995" />
-    <state x="399" y="128" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1613691674305">
-      <screen x="0" y="0" width="1600" height="984" />
-    </state>
-    <state x="399" y="128" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/1600.0.1280.680/0.0.1600.984@0.0.1600.984" timestamp="1613691674305" />
-    <state x="252" y="116" key="NewPhpClassDialog" timestamp="1613692814228">
-      <screen x="0" y="0" width="1600" height="984" />
-    </state>
-    <state x="252" y="116" key="NewPhpClassDialog/1600.0.1280.680/0.0.1600.984@0.0.1600.984" timestamp="1613692814228" />
-    <state width="757" height="596" key="SwitcherDM" timestamp="1613691748100">
-      <screen x="0" y="0" width="1600" height="984" />
-    </state>
-    <state width="757" height="596" key="SwitcherDM/1600.0.1280.680/0.0.1600.984@0.0.1600.984" timestamp="1613691748100" />
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
 </project>

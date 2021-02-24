@@ -36,12 +36,22 @@ trait Options
     }
 
     /**
-     * @param  array  $overrides
+     * @param array $overrides
      */
     protected function setOptions(array $overrides = []): void
     {
         foreach ($overrides as $key => $value) {
             data_set($this->optionDefaults, $key, $value);
         }
+    }
+
+    public function getViewOptionProperty()
+    {
+        return 'options';
+    }
+
+    public function getViewOptionButtonsProperty()
+    {
+        return 'options.buttons';
     }
 }

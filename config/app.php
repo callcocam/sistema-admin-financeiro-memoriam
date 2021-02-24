@@ -175,6 +175,7 @@ return [
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
         SIGA\SigaLivewireServiceProvider::class,
+        SIGA\Gerencianet\GerencianetServiceProvider::class,
 
     ],
 

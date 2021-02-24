@@ -52,9 +52,14 @@ class FormComponent extends Component
     }
 
     public function title(){
-        if($this->model->exists)
-        return sprintf('Editar %s', $this->form_data['name']);
-        
+        if($this->model->exists){
+            if(isset($this->form_data['name'])){
+                return sprintf('Editar %s', $this->form_data['name']);
+            }
+
+        }
+
+
         return "Cadastrar novo registro";
     }
 

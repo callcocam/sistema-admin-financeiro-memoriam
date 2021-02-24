@@ -17,4 +17,9 @@ return [
     'draft' => 'Draft',
     'revision' => 'Revision',
     'Deleted' => 'Deleted',
+    'show' => 'Show',
+    'edit' => 'Edit',
+    'delete' => 'Delete',
+    'confirm' => 'Confirm',
+    'select-item' => '--Select Item--',
 ];

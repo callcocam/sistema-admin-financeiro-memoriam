@@ -45,10 +45,10 @@ return [
          ]
      ],
     'status'=>[
-        'draft'=>'bg-danger-100 text-danger-800',
+        'draft'=>'bg-red-100 text-red-800',
         'revision'=>'bg-gray-100 text-gray-800',
         'published'=>'bg-green-100 text-green-800',
-        'deleted'=>'bg-red-100 text-red-800',
+        'deleted'=>'bg-red-200 text-red-900',
 
     ]
 ];

@@ -13,7 +13,7 @@ use SIGA\Table\Views\Column;
 
 class ListComponent extends TableComponent
 {
-   public $paginationEnabled = false;
+
 
    protected $client;
     /**

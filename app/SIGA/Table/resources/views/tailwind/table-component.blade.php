@@ -4,7 +4,7 @@
          @if (is_numeric($refresh)) wire:poll.{{ $refresh }}.ms
          @elseif(is_string($refresh)) wire:poll="{{ $refresh }}" @endif >
             @include(table_includes('offline'))
-            @include(table_includes('options'))
+            @include(table_includes($this->ViewOption))
                 @if ($this->getOption('tailwind.responsive'))
                     <div class="{{$this->getOption('tailwind.responsive')}}">
                         @endif
