@@ -18,7 +18,7 @@
            </div>
            <div class="col-md-4">
                @if(!is_array($form_data[$field->name]))
-                   <button type="button" class="btn btn-danger btn-block rounded-full" wire:click="deleteUploadUrl('{{$field->name}}')" ><x-c-icon icon="trash"/>{{ _("Delete poto") }}</button>
+                   <button type="button" class="btn btn-danger btn-block rounded-full" wire:click="deleteUploadUrl('{{$field->name}}')" ><x-c-icon icon="trash" class="h-6 w-6 mr-2"/>{{ _("Delete poto") }}</button>
                @endif
            </div>
        </div>

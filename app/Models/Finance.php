@@ -26,4 +26,11 @@ class Finance extends AbstractModel
     {
         return false;
     }
+
+    public function field_date_name()
+    {
+
+        return 'due_at';
+    }
+
 }

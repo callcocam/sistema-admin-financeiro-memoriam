@@ -34,4 +34,35 @@ class Income extends AbstractModel
     public function getStatusAttribute(){
         return $this->finance->status;
     }
+
+
+    public function _lastMonths(){
+
+        $curretIncomes= $this->LastMonth()->get()->map(function ($expence){
+            return $expence->finance->value;
+        });
+        $total = 0;
+        if ($curretIncomes){
+
+            foreach ($curretIncomes as $curretIncome) {
+                $total = Calcular($total , $curretIncome, '+');
+            }
+        }
+        return $total;
+    }
+
+    public function _nextMonths(){
+
+        $curretIncomes= $this->NextMonths()->get()->map(function ($expence){
+            return $expence->finance->value;
+        });
+        $total = 0;
+        if ($curretIncomes){
+
+            foreach ($curretIncomes as $curretIncome) {
+                $total = Calcular($total , $curretIncome, '+');
+            }
+        }
+        return $total;
+    }
 }

@@ -35,6 +35,11 @@ abstract class AbstractServices
         $this->token(session()->get('access_token'));
     }
 
+    public static function make(): AbstractServices
+    {
+        return new static();
+    }
+
     public function login($client)
     {
         //'oauth/token'
@@ -86,6 +91,7 @@ abstract class AbstractServices
      */
     public function edit($one, $data = [])
     {
+
         $response = $this->request()->get($this->getUrl($one), $data);
         if ($response->successful()) {
             return $response;

@@ -45,7 +45,7 @@ trait HasUtils
 
     public function reloadLink()
     {
-        return view(table_includes($this->reload_view_button()))->with('route', route(sprintf('admin.%s.index', $this->route())));
+        return view(table_includes($this->reload_view_button()))->with('route', sprintf('admin.%s.index', $this->route()));
     }
 
     public function permission($action)

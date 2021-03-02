@@ -14,7 +14,7 @@ use SIGA\Table\Views\Column;
 
 class ListComponent extends TableComponent
 {
-   
+
      /**
      * @return \Illuminate\Database\Eloquent\Builder
      */
@@ -33,9 +33,8 @@ class ListComponent extends TableComponent
             Column::make('profile_photo_url')->format(function(User $model) {
                 return view('vendor.laravel-livewire-table.image', compact('model'));
             }),
-            Column::make('name')->sortable()->searchable(),
             Column::make('action')->actions('users')
- 
+
         ];;
     }
 
@@ -46,7 +45,7 @@ class ListComponent extends TableComponent
         return 'layouts.app';
     }
 
-    
+
     public function route()
     {
         return 'users';

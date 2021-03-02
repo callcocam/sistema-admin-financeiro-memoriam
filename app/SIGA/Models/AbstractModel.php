@@ -9,14 +9,14 @@ namespace SIGA\Models;
 
 
 use Illuminate\Database\Eloquent\Model;
+use SIGA\Scopes\DateRange;
 use SIGA\Sluggable\HasSlug;
 use SIGA\Sluggable\SlugOptions;
-use SIGA\Tenant\BelongsToTenants;
 
 class AbstractModel extends Model
 {
 
-    use HasSlug;
+    use HasSlug, DateRange;
 
    public $incrementing = false;
 

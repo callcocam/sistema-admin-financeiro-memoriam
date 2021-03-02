@@ -16,13 +16,20 @@ use Illuminate\Http\Request;
 Route::middleware('auth')->group(function (){
 
     Route::get('/', function () {
-        return view('welcome');
+
+       $expensesMonth =  app(\App\Models\Expense::class)->_lastMonths();
+       $incomesMonth =  app(\App\Models\Income::class)->_lastMonths();
+       $expensesFuture =  app(\App\Models\Expense::class)->_nextMonths();
+       $overdueExpenses =  app(\App\Models\Expense::class)->_nextMonths();
+       $cashValue = Calcular($incomesMonth, $expensesMonth, '-');
+        return view('welcome', compact('incomesMonth','expensesMonth','overdueExpenses','expensesFuture','cashValue'));
     })->name('home');
 
 
 
     Route::get('/load-clients-api', function (\App\Services\ClientService $clientService) {
         $clients = $clientService->get();
+        \App\Models\Client::query()->forceDelete();
         foreach ($clients as $client){
             if (!\App\Models\Client::query()->find( $client->id)){
                 \App\Models\Client::factory(1)->create([
@@ -56,9 +63,8 @@ Route::middleware('auth')->group(function (){
     Route::get('icons', \App\Http\Livewire\Utils\Icons::class)->name('admin.icons.index');
     Route::get('minha-conta', \App\Http\Livewire\Users\Profile::class)->name('admin.profile.index');
     Route::get('usuarios', \App\Http\Livewire\Users\ListComponent::class)->name('admin.users.index');
-
     Route::get('usuarios/{user}/edit', \App\Http\Livewire\Users\EditComponent::class)->name('admin.users.edit');
-    Route::get('usuarios/{user}/show', \App\Http\Livewire\Users\ShowComponent::class)->name('admin.users.show');
+    //Route::get('usuarios/{user}/show', \App\Http\Livewire\Users\ShowComponent::class)->name('admin.users.show');
 
 
     Route::get('roles', \App\Http\Livewire\Roles\ListComponent::class)->name('admin.roles.index');

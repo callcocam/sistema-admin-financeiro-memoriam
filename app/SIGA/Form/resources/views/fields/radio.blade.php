@@ -22,7 +22,7 @@
                 </div>
                 <div class="ml-3 text-sm">
                     <label class="font-medium text-gray-700" for="{{ $field->name . '.' . $loop->index }}">
-                        {{ $label }}
+                      @lang(sprintf('form.%s', $label))
                     </label>
                 </div>
             </div>

@@ -8,4 +8,6 @@ return [
     'save-go-back'=>'Save & Go Back',
     'save'=>'Save',
     'back-to-list'=>'Back',
+    'draft'=>'Draft',
+    'published'=>'Published',
 ];

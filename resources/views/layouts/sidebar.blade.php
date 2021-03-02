@@ -53,7 +53,7 @@
             <span class="mx-3">{{ __('Incomes')}} </span>
         </a>
 
-        <a class="flex items-center mt-4 py-2 px-6 {{ is_active('admin.plans.index') }}" href="{{ route('admin.expenses.index') }}">
+        <a class="flex items-center mt-4 py-2 px-6 {{ is_active('admin.expenses.index') }}" href="{{ route('admin.expenses.index') }}">
         <x-c-icon class="h-6 w-6" icon="arrow-thick-to-left" stroke="currentColor"></x-c-icon>
             <span class="mx-3">{{ __('Expenses')}} </span>
         </a>
@@ -68,7 +68,7 @@
             <span class="mx-3">{{ __('Icons')}} </span>
         </a>
 
-        <a class="flex items-center mt-4 py-2 px-6 {{ is_active('home') }}" href="{{ route('logout') }}">
+        <a class="flex items-center mt-4 py-2 px-6 {{ is_active('logout') }}" href="{{ route('logout') }}">
         <x-c-icon class="h-6 w-6" icon="account-logout" stroke="currentColor"></x-c-icon>
             <span class="mx-3">{{ __('Logout') }}</span>
         </a>

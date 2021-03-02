@@ -27,6 +27,7 @@ class FormComponent extends Component
     public $model;
     public $form_data;
     public $files;
+    public $isActions = true;
     private static $storage_disk;
     private static $storage_path;
 
