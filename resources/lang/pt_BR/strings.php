@@ -7,6 +7,7 @@
 return [
     'clear' => 'Limpar',
     'export' => 'Exportar',
+    'interval' => 'Intervalo de cobrança',
     'profile_photo_url' => 'Foto',
     'action' => 'Ação',
     'name' => 'Nome',

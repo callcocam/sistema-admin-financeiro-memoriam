@@ -23,8 +23,8 @@ class ListComponent extends TableComponent
     public function columns(): array
     {
        return [
-           Column::make('Nome do plano','name')->sortable()->searchable(),
-           Column::make('Intervalo de cobrança','interval')->sortable(),
+           Column::make('name')->sortable()->searchable(),
+           Column::make('interval')->sortable(),
            Column::make('action')->actions($this->route())
        ];
     }

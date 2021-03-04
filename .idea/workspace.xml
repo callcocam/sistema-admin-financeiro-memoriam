@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b58900c3-9826-4331-95de-9a25ea457358" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Livewire/Clients/ListComponent.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Livewire/Clients/ListComponent.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Livewire/Expenses/ListComponent.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Livewire/Expenses/ListComponent.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Livewire/Providers/ListComponent.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Livewire/Providers/ListComponent.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/SIGA/Table/resources/views/tailwind/includes/columns.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/SIGA/Table/resources/views/tailwind/includes/columns.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Livewire/Plans/ListComponent.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Livewire/Plans/ListComponent.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/lang/pt_BR/strings.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/lang/pt_BR/strings.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -167,7 +163,7 @@
       <workItem from="1614689996421" duration="6041000" />
       <workItem from="1614715272805" duration="1000000" />
       <workItem from="1614716324847" duration="1639000" />
-      <workItem from="1614792224536" duration="14367000" />
+      <workItem from="1614792224536" duration="14918000" />
     </task>
     <servers />
   </component>
