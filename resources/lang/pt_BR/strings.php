@@ -12,6 +12,8 @@ return [
     'action' => 'Ação',
     'name' => 'Nome',
     'email' => 'Email',
+    'value' => 'Valor',
+    'status' => 'Situação',
     'loading' => 'Carregando...',
     'no_results' => 'Não há resultados para exibir para esta consulta.',
     'offline' => 'Você não está conectado à Internet no momento.',
