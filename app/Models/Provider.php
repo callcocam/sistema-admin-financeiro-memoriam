@@ -14,6 +14,8 @@ class Provider extends AbstractModel
 {
     use HasFactory, UuidGenerate;
 
-    protected $guarded = ['id'];
+    protected $fillable = [
+       'type','name','slug','email','phone','description','status', 'created_by','updated_by'
+    ];
 
 }

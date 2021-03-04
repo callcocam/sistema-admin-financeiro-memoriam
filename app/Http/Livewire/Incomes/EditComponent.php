@@ -7,8 +7,10 @@
 
 namespace App\Http\Livewire\Incomes;
 
+use App\Models\Client;
 use App\Models\Income;
 use SIGA\Form\Fields\Radio;
+use SIGA\Form\Fields\Select;
 use SIGA\Form\Fields\Text;
 use SIGA\Form\Fields\Textarea;
 use SIGA\Form\FormComponent;
@@ -36,7 +38,8 @@ class EditComponent extends FormComponent
     public function fields()
     {
         return [
-            Text::make('Cliente', 'name')->attribute('readonly', true)->default($this->model->client->name),
+            Select::make('client_id')->target(Client::query()->orderBy('name'), $this->isSingleSelectSearch('client_id')),
+            Text::make('Cliente', 'name')->attribute('readonly', true),
             Text::make('Valor', 'value'),
             Text::make('Data de Vencimento', 'due_at')->type('date'),
             Textarea::make('Description'),

@@ -22,12 +22,14 @@ class RoleSeeder extends Seeder
            'name'=>"Administrador", 'slug'=>"administrador", 'description'=>"Controle Parcial Do Sistema", 'special'=>null
         ]);
 
+        $mail = sprintf("super-admin@%s", request()->getHost());
         $userSuper =  User::factory()->create([
-            'type'=>"cpf",'name'=>"Super Admin",'email'=>"super-admin@example.com"
+            'type'=>"cpf",'name'=>"Super Admin",'email'=>$mail
         ])->first();
 
+        $mail = sprintf("admin@%s", request()->getHost());
         $userAdmin =  User::factory()->create([
-           'type'=>"cpf",'name'=>"Administrador",'email'=>"admin@example.com"
+           'type'=>"cpf",'name'=>"Administrador",'email'=>$mail
         ])->first();
 
         $userSuper->roles()->sync($roleSuper->id->toString());
