@@ -101,6 +101,12 @@ Route::middleware('auth')->group(function (){
     Route::get('despesas', \App\Http\Livewire\Expenses\ListComponent::class)->name('admin.expenses.index');
     Route::get('despesas/cadastrar', \App\Http\Livewire\Expenses\CreateComponent::class)->name('admin.expenses.create');
     Route::get('despesas/{expense}/editar', \App\Http\Livewire\Expenses\EditComponent::class)->name('admin.expenses.edit');
+
+
+    Route::get('translations', \App\Http\Livewire\Translations\ListComponent::class)->name('admin.translations.index');
+    Route::get('translations/cadastrar', \App\Http\Livewire\Translations\CreateComponent::class)->name('admin.translations.create');
+    Route::get('translations/{translation}/editar', \App\Http\Livewire\Translations\EditComponent::class)->name('admin.translations.edit');
+
 });
 
 
