@@ -7,6 +7,10 @@
 return [
     'clear' => 'Limpar',
     'export' => 'Exportar',
+    'profile_photo_url' => 'Foto',
+    'action' => 'Ação',
+    'name' => 'Nome',
+    'email' => 'Email',
     'loading' => 'Carregando...',
     'no_results' => 'Não há resultados para exibir para esta consulta.',
     'offline' => 'Você não está conectado à Internet no momento.',

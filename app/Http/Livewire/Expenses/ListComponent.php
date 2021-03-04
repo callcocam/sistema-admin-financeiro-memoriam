@@ -23,13 +23,13 @@ class ListComponent extends TableComponent
     public function columns(): array
     {
        return [
-           Column::make('Nome do fornecedor','name')->format(function ($model){
+           Column::make('name')->format(function ($model){
                return $model->provider->name;
            }),
-           Column::make('Valor','value')->format(function ($model){
+           Column::make('value')->format(function ($model){
                return $model->finance? form_read($model->finance->value): '0,0';
            }),
-           Column::make('Situação','status')->view('status'),
+           Column::make('status')->view('status'),
            //
            Column::make('action')->actions($this->route())
        ];

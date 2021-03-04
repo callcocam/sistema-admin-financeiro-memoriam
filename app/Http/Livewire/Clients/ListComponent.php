@@ -23,7 +23,7 @@ class ListComponent extends TableComponent
     public function columns(): array
     {
        return [
-           Column::make('Name')->sortable()->searchable(),
+           Column::make('name')->sortable()->searchable(),
            Column::make('action')->actions($this->route())
        ];
     }
