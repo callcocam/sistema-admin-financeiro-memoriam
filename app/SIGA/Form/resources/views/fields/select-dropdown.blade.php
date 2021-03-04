@@ -1,7 +1,7 @@
 <div class="col-span-6 sm:{{ $field->span }}" x-data="{open: false}" @click.away="open = false"
      @close.stop="open = false">
     <label id="listbox-label" class="block text-sm font-medium text-gray-700">
-        {{ $field->label }}
+        {{ _translate(sprintf('form.%s', $field->name),$field->label) }}
     </label>
     <div class="mt-1 relative">
         <button @click="open=true" type="button" aria-haspopup="listbox" aria-expanded="true"

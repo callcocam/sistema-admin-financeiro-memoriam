@@ -1,5 +1,7 @@
 <div class="form-group row">
-    <label class="col-md-3 col-form-label" for="{{ $field->name }}"> {{ $field->label }}</label>
+    <label class="col-md-3 col-form-label" for="{{ $field->name }}">
+        {{ _translate(sprintf('form.%s', $field->name),$field->label) }}
+    </label>
     <div class="col-md-9">
         <select wire:model.lazy="{{ $field->key }}"  {{ $field->merge(['class'=>$field->class]) }}>
             <option value="0">Please select</option>

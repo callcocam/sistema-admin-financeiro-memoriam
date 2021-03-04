@@ -8,7 +8,6 @@
 namespace SIGA;
 
 
-use App\Modules\Console\Commands\TenantsArtisanCommand;
 use Illuminate\Support\ServiceProvider;
 use SIGA\Console\Commands\CreateCommand;
 use SIGA\Console\Commands\EditCommand;
@@ -20,12 +19,14 @@ use SIGA\Acl\AclServiceProvider;
 use SIGA\Flash\FlashServiceProvider;
 use SIGA\Table\LivewireTablesServiceProvide;
 use SIGA\Form\FormServiceProvider;
+use SIGA\Translations\TranslationServiceProvider;
 
 class SigaLivewireServiceProvider extends ServiceProvider
 {
 
     public function register()
     {
+      $this->app->register(TranslationServiceProvider::class);
       $this->app->register(AclServiceProvider::class);
       $this->app->register(FlashServiceProvider::class);
       $this->app->register(LivewireTablesServiceProvide::class);

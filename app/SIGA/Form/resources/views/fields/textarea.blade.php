@@ -1,5 +1,7 @@
 <div class="col-span-6 sm:{{ $field->span }}">
-    <label class="block text-sm font-medium text-gray-700" for="{{ $field->name }}">{{ $field->label }}</label>
+    <label class="block text-sm font-medium text-gray-700" for="{{ $field->name }}">
+        {{ _translate(sprintf('form.%s', $field->name),$field->label) }}
+    </label>
     <div>
         <textarea  wire:ignore wire:model.lazy="{{ $field->key }}"  {{ $field->merge(['class'=>$field->class]) }}></textarea>
         @include('laravel-livewire-forms::fields.error-help')

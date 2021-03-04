@@ -66,3 +66,21 @@ if ( ! function_exists('status'))
         return ['draft','published'][$key];
     }
 }
+
+if ( ! function_exists('_translate'))
+{
+    /**
+     * Get the configuration path.
+     *
+     * @param $key
+     * @param $default
+     * @return string
+     */
+    function _translate($key, $default): string
+    {
+        if(app(\Illuminate\Translation\Translator::class)->has($key)){
+            return trans($key);
+        }
+        return $default;
+    }
+}

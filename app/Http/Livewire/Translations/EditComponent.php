@@ -28,6 +28,7 @@ class EditComponent extends FormComponent
         public function fields()
         {
             return [
+                Text::make('language')->attribute('readonly', true),
                 Text::make('group'),
                 Text::make('key'),
                 Textarea::make('text'),

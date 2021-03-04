@@ -1,7 +1,9 @@
 <div class="col-span-6 sm:col-spa-{{ $field->span }}" x-data="{open: false}" @click.away="open = false" @close.stop="open = false">
-    <label class="block text-sm font-medium text-gray-700" for="{{ $field->name }}"> {{ $field->label }} </label>
+    <label class="block text-sm font-medium text-gray-700" for="{{ $field->name }}">
+        {{ _translate(sprintf('form.%s', $field->name),$field->label) }}
+    </label>
     <div class="flex flex-col border border-gray-200 rounde-lg p-3 mt-2" @click="open=true">
-        <div class="flex flex-col">           
+        <div class="flex flex-col">
                 <span class="flex py-2">
                     @if($this->ValueOptions)
                             @foreach($this->ValueOptions as $key => $ValueOptions)

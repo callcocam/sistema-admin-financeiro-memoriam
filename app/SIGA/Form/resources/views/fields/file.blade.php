@@ -5,7 +5,7 @@
 {{-- */--}}
 <div class="form-group row">
     <label for="{{ $field->name }}" class="col-md-2 col-form-label text-md-right">
-        {{ $field->label }}
+        {{ _translate(sprintf('form.%s', $field->name),$field->label) }}
     </label>
 
     <div class="col-md">

@@ -4,7 +4,8 @@
 {{-- * https://www.sigasmart.com.br--}}
 {{-- */--}}
 <fieldset class="col-span-6 sm:{{ $field->span }}">
-    <legend class="text-base font-medium text-gray-900">{{ $field->label }}
+    <legend class="text-base font-medium text-gray-900">
+        {{ _translate(sprintf('form.%s', $field->name),$field->label) }}
         @if($field->placeholder)
             <p class="text-gray-500">{{ $field->placeholder }}</p>
         @endif

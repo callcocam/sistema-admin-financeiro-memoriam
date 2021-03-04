@@ -1,5 +1,7 @@
 <div class="col-span-6 sm:col-spa-{{ $field->span }}">
-    <label class="block text-sm font-medium text-gray-700" for="{{ $field->name }}"> {{ $field->label }}</label>
+    <label class="block text-sm font-medium text-gray-700" for="{{ $field->name }}">
+        {{ _translate(sprintf('form.%s', $field->name),$field->label) }}
+    </label>
     <div class="flex flex-col p-1 border border-gray-200 rounded">
         <div class="flex flex-col">
             <span class="flex py-2 px-1">{{ $this->ValueOptionsCount }} item(s) selected</span>

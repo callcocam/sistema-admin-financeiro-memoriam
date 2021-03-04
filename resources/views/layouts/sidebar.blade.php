@@ -93,11 +93,13 @@
                 <span class="mx-3">{{ __('Icons')}} </span>
             </a>
         @endcan
-        {{--        <a class="flex items-center mt-4 py-2 px-6 {{ is_active('admin.translations.index') }}" href="{{ route('admin.translations.index') }}">--}}
-        {{--        <x-c-icon class="h-6 w-6" icon="language" stroke="currentColor"></x-c-icon>--}}
-        {{--            <span class="mx-3">{{ __('Translations')}} </span>--}}
-        {{--        </a>--}}
-
+        @can('admin.translations.index')
+            <a class="flex items-center mt-4 py-2 px-6 {{ is_active('admin.translations.index') }}"
+               href="{{ route('admin.translations.index') }}">
+                <x-c-icon class="h-6 w-6" icon="language" stroke="currentColor"></x-c-icon>
+                <span class="mx-3">{{ __('Translations')}} </span>
+            </a>
+        @endcan
         <a class="flex items-center mt-4 py-2 px-6 {{ is_active('logout') }}" href="{{ route('logout') }}">
             <x-c-icon class="h-6 w-6" icon="account-logout" stroke="currentColor"></x-c-icon>
             <span class="mx-3">{{ __('Logout') }}</span>

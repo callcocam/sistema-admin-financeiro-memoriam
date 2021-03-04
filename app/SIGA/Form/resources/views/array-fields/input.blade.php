@@ -3,12 +3,8 @@
 {{-- * User: callcocam@gmail.com, contato@sigasmart.com.br--}}
 {{-- * https://www.sigasmart.com.br--}}
 {{-- */--}}
-<div class="col-md{{ $array_field->column_width ? '-' . $array_field->column_width : '' }} mb-2 mb-md-0">
+<div class="col-span-6 sm:{{ $array_field->span }}">
     <input
-        type="{{ $array_field->input_type }}"
-        class="form-control form-control-sm @error($field->key . '.' . $key . '.' . $array_field->name) is-invalid @enderror"
-        autocomplete="{{ $array_field->autocomplete }}"
-        placeholder="{{ $array_field->placeholder }}"
-        wire:model.lazy="{{ $field->key . '.' . $key . '.' . $array_field->name }}">
-    @include('laravel-livewire-forms::array-fields.error-help')
+        {{ $array_field->merge(['class'=>$field->class]) }}
+        wire:model.lazy="{{ $array_field->key . '.' . $key . '.' . $array_field->name }}">
 </div>

@@ -1,6 +1,6 @@
 <div>
     <label class="block text-sm font-medium text-gray-700">
-        {{ $field->label }}
+        {{ _translate(sprintf('form.%s', $field->name),$field->label) }}
     </label>
     <div class="mt-2 flex items-center">
                 <span class="inline-block h-12 w-12 rounded-full overflow-hidden bg-gray-100">
