@@ -1,5 +1,7 @@
 {
     "Name": "Nome",
+    "Email": "Email",
+    "Processing request": "Efetuando a requisissão",
     "E-Mail Address": "Email",
     "Password": "Senha",
     "Confirm Password": "Confirmação de senha",

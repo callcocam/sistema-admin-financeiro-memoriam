@@ -2,43 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b58900c3-9826-4331-95de-9a25ea457358" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/SIGA/Translations/Exceptions/InvalidConfiguration.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/SIGA/Translations/TranslationLoaderManager.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/SIGA/Translations/TranslationLoaders/Db.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/SIGA/Translations/TranslationLoaders/TranslationLoader.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/SIGA/Translations/TranslationServiceProvider.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/SIGA/Translations/config/translation-loader.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/translation-loader.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Livewire/Translations/EditComponent.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Livewire/Translations/EditComponent.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/Translation.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Translation.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/SIGA/Form/resources/views/array-fields/input.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/SIGA/Form/resources/views/array-fields/input.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/SIGA/Form/resources/views/fields/array.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/SIGA/Form/resources/views/fields/array.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/SIGA/Form/resources/views/fields/avatar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/SIGA/Form/resources/views/fields/avatar.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/SIGA/Form/resources/views/fields/checkbox.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/SIGA/Form/resources/views/fields/checkbox.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/SIGA/Form/resources/views/fields/checkboxes.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/SIGA/Form/resources/views/fields/checkboxes.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/SIGA/Form/resources/views/fields/ckeditor.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/SIGA/Form/resources/views/fields/ckeditor.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/SIGA/Form/resources/views/fields/cover.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/SIGA/Form/resources/views/fields/cover.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/SIGA/Form/resources/views/fields/file.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/SIGA/Form/resources/views/fields/file.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/SIGA/Form/resources/views/fields/input-group-url.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/SIGA/Form/resources/views/fields/input-group-url.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/SIGA/Form/resources/views/fields/input-grup.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/SIGA/Form/resources/views/fields/input-grup.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/SIGA/Form/resources/views/fields/input.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/SIGA/Form/resources/views/fields/input.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/SIGA/Form/resources/views/fields/mult-select-dropdown.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/SIGA/Form/resources/views/fields/mult-select-dropdown.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/SIGA/Form/resources/views/fields/mult-select-inline.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/SIGA/Form/resources/views/fields/mult-select-inline.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/SIGA/Form/resources/views/fields/radio.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/SIGA/Form/resources/views/fields/radio.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/SIGA/Form/resources/views/fields/select-dropdown.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/SIGA/Form/resources/views/fields/select-dropdown.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/SIGA/Form/resources/views/fields/select-inline.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/SIGA/Form/resources/views/fields/select-inline.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/SIGA/Form/resources/views/fields/select.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/SIGA/Form/resources/views/fields/select.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/SIGA/Form/resources/views/fields/textarea.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/SIGA/Form/resources/views/fields/textarea.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/SIGA/SigaLivewireServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/SIGA/SigaLivewireServiceProvider.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/SIGA/Table/resources/views/tailwind/includes/actions/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/SIGA/Table/resources/views/tailwind/includes/actions/create.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/SIGA/Table/resources/views/tailwind/includes/actions/reload.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/SIGA/Table/resources/views/tailwind/includes/actions/reload.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/SIGA/Table/resources/views/tailwind/includes/options/buttons.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/SIGA/Table/resources/views/tailwind/includes/options/buttons.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/SIGA/helpers.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/SIGA/helpers.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/lang/en/strings.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/lang/en/strings.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/lang/pt_BR.json" beforeDir="false" afterPath="$PROJECT_DIR$/resources/lang/pt_BR.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/lang/pt_BR/strings.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/lang/pt_BR/strings.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/sidebar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/sidebar.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -199,7 +163,7 @@
       <workItem from="1614689996421" duration="6041000" />
       <workItem from="1614715272805" duration="1000000" />
       <workItem from="1614716324847" duration="1639000" />
-      <workItem from="1614792224536" duration="27912000" />
+      <workItem from="1614792224536" duration="28682000" />
     </task>
     <servers />
   </component>
