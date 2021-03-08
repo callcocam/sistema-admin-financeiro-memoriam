@@ -15,16 +15,17 @@ use Illuminate\Http\Request;
 */
 Route::middleware('auth')->group(function (){
 
-    Route::get('/', function () {
+//    Route::get('/', function () {
+//
+//       $expensesMonth =  app(\App\Models\Expense::class)->_lastMonths();
+//       $incomesMonth =  app(\App\Models\Income::class)->_lastMonths();
+//       $expensesFuture =  app(\App\Models\Expense::class)->_nextMonths();
+//       $overdueExpenses =  app(\App\Models\Expense::class)->_nextMonths();
+//       $cashValue = Calcular($incomesMonth, $expensesMonth, '-');
+//        return view('welcome', compact('incomesMonth','expensesMonth','overdueExpenses','expensesFuture','cashValue'));
+//    })->name('home');
 
-       $expensesMonth =  app(\App\Models\Expense::class)->_lastMonths();
-       $incomesMonth =  app(\App\Models\Income::class)->_lastMonths();
-       $expensesFuture =  app(\App\Models\Expense::class)->_nextMonths();
-       $overdueExpenses =  app(\App\Models\Expense::class)->_nextMonths();
-       $cashValue = Calcular($incomesMonth, $expensesMonth, '-');
-        return view('welcome', compact('incomesMonth','expensesMonth','overdueExpenses','expensesFuture','cashValue'));
-    })->name('home');
-
+    Route::get('/', \App\Http\Livewire\DashboardComponent::class)->name('home');
 
 
     Route::get('/load-clients-api', function (\App\Services\ClientService $clientService) {

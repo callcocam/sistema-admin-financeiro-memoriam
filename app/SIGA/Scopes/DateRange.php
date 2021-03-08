@@ -151,6 +151,7 @@ trait DateRange
      */
     public function scopeLastMonth($query)
     {
+
         return $query->whereBetween($this->field_date_name(), [
             Carbon::now()->subMonth()->startOfMonth(),
             Carbon::now()->subMonth()->endOfMonth()

@@ -10,6 +10,9 @@ use Livewire\Component;
 
 abstract class AbstractComponent extends Component
 {
+    protected function data(){
+
+    }
 
     protected function optionns(){
         return [
@@ -27,4 +30,6 @@ abstract class AbstractComponent extends Component
          $page = $this->optionns();
          return view($this->view())->layout('layouts.app',compact('page'));
     }
+
+
 }

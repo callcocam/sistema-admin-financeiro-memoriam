@@ -7,6 +7,7 @@
 namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Illuminate\Support\Facades\DB;
 use SIGA\Models\AbstractModel;
 use SIGA\Scopes\UuidGenerate;
 
@@ -42,9 +43,24 @@ class Expense extends AbstractModel
 
     public function _lastMonths(){
 
-        $curretExpences= $this->LastMonth()->get()->map(function ($expence){
-            return $expence->finance->value;
+
+         $curretExpences= $this->get()->map(function ($expence){
+            return $expence->finance->LastMonth()->first();
         });
+        $total = 0;
+
+        if ($curretExpences){
+
+            foreach ($curretExpences as $curretExpence) {
+                $total = Calcular($total , $curretExpence->value, '+');
+            }
+        }
+        return $total;
+    }
+
+    public function _nextMonths(){
+
+        $curretExpences= $this->finance->NextMonths()->sun('value');
         $total = 0;
         if ($curretExpences){
 
@@ -55,18 +71,8 @@ class Expense extends AbstractModel
         return $total;
     }
 
-    public function _nextMonths(){
 
-        $curretExpences= $this->NextMonths()->get()->map(function ($expence){
-            return $expence->finance->value;
-        });
-        $total = 0;
-        if ($curretExpences){
-
-            foreach ($curretExpences as $curretExpence) {
-                $total = Calcular($total , $curretExpence, '+');
-            }
-        }
-        return $total;
+    public function field_date_name(){
+        return 'due_at';
     }
 }

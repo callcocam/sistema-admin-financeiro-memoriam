@@ -2,14 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b58900c3-9826-4331-95de-9a25ea457358" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/storage/data/app_expenses.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/storage/data/app_incomes.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/storage/data/incomes.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Livewire/DashboardComponent.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/livewire/dashboard.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Livewire/Expenses/EditComponent.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Livewire/Expenses/EditComponent.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Livewire/Incomes/EditComponent.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Livewire/Incomes/EditComponent.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeders/ExpenseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeders/ExpenseSeeder.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeders/IncomeSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeders/IncomeSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Livewire/AbstractComponent.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Livewire/AbstractComponent.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Expense.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Expense.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/SIGA/Scopes/DateRange.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/SIGA/Scopes/DateRange.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/SIGA/helpers.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/SIGA/helpers.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -184,7 +184,7 @@
       <workItem from="1614689996421" duration="6041000" />
       <workItem from="1614715272805" duration="1000000" />
       <workItem from="1614716324847" duration="1639000" />
-      <workItem from="1614792224536" duration="48976000" />
+      <workItem from="1614792224536" duration="54551000" />
     </task>
     <servers />
   </component>
