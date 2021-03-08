@@ -8,6 +8,7 @@
 namespace App\Http\Livewire\Expenses;
 
 use App\Models\Expense;
+use App\Models\Provider;
 use SIGA\Form\Fields\Radio;
 use SIGA\Form\Fields\Select;
 use SIGA\Form\Fields\Text;
@@ -37,6 +38,7 @@ class EditComponent extends FormComponent
         public function fields()
         {
             return [
+                Select::make('Fornecedor','provider_id')->target(Provider::query()),
                 Text::make('Fornecedor','name')->attribute('readonly',true)->default($this->model->provider->name),
                 Text::make('Valor','value'),
                 Text::make('Data de Vencimento','due_at')->type('date'),

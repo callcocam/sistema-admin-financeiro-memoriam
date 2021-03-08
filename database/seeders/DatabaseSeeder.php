@@ -17,11 +17,11 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
-        User::query()->delete();
-        Permission::query()->delete();
-        Role::query()->delete();
+//        User::query()->delete();
+//        Permission::query()->delete();
+//        Role::query()->delete();
 //
-        $this->call(RoleSeeder::class);
+        //$this->call(RoleSeeder::class);
         //$this->call(ClientSeeder::class);
         $this->call(ExpenseSeeder::class);
         $this->call(IncomeSeeder::class);

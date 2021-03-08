@@ -31,7 +31,7 @@ trait Sorting
      *
      * @var bool
      */
-    public $direction = 'asc';
+    public $direction = 'desc';
 
     /**
      * The default sort icon.

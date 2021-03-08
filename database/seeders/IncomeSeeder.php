@@ -23,7 +23,9 @@ class IncomeSeeder extends Seeder
             ]);
         }
         $client = Client::query()->where('name', 'teste')->first();
-        //Income::query()->forceDelete();
+
+        Income::query()->where('client_id',$client->id)->forceDelete();
+
         $this->add(1, 'Recebimento de cobrança', 'PIRÂMIDE ADMINISTRAÇÃO E ASSESSORIA LTDA', '2020-08-15 03:00:00', '543.72', 1, NULL, '2021-02-01 19:29:03',$client);
         $this->add(2, 'Recebimento de cobrança', 'Ilmacc Comercio e Servicos Postumos LTDA', '2020-08-18 03:00:00', '499.00', 1, NULL, '2021-02-01 19:29:02',$client);
         $this->add(3, 'Recebimento de cobrança', 'ALEXANDRE BARROS PEREIRA', '2020-08-18 03:00:00', '471.00', 1, NULL, '2021-02-01 19:29:02',$client);
@@ -98,6 +100,7 @@ class IncomeSeeder extends Seeder
         $income = Income::factory()->create([
             'client_id' => $client->id,
             'name' => $name,
+            'ordering' => $id,
         ]);
         $income->finance()->create([
             'description' => $description,
