@@ -2,7 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b58900c3-9826-4331-95de-9a25ea457358" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/app/Http/Livewire/Clients/EditComponent.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Livewire/Clients/EditComponent.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/storage/data/app_expenses.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/storage/data/app_incomes.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/storage/data/incomes.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Livewire/Expenses/EditComponent.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Livewire/Expenses/EditComponent.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Livewire/Incomes/EditComponent.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Livewire/Incomes/EditComponent.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeders/ExpenseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeders/ExpenseSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeders/IncomeSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeders/IncomeSeeder.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -144,14 +151,20 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/lang/pt_BR" />
+    <property name="WebServerToolWindowFactoryState" value="true" />
+    <property name="WebServerToolWindowPanel.toolwindow.highlight.mappings" value="true" />
+    <property name="WebServerToolWindowPanel.toolwindow.highlight.symlinks" value="true" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.date" value="false" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.permissions" value="false" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.size" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/storage/data" />
     <property name="php.override.implement.member.chooser.php.doc" value="NONE" />
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="\\wsl$\Ubuntu-20.04\var\www\dionata\sistema-admin-financeiro-memoriam\storage\data" />
       <recent name="\\wsl$\Ubuntu-20.04\var\www\dionata\sistema-admin-financeiro-memoriam\resources\lang\pt_BR" />
       <recent name="\\wsl$\Ubuntu-20.04\var\www\dionata\sistema-admin-financeiro-memoriam\resources\lang\en" />
     </key>
@@ -171,7 +184,7 @@
       <workItem from="1614689996421" duration="6041000" />
       <workItem from="1614715272805" duration="1000000" />
       <workItem from="1614716324847" duration="1639000" />
-      <workItem from="1614792224536" duration="43013000" />
+      <workItem from="1614792224536" duration="48976000" />
     </task>
     <servers />
   </component>

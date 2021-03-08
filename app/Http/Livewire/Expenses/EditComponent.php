@@ -58,7 +58,9 @@ class EditComponent extends FormComponent
                     'status'=>$this->form_data['status'],
                 ]);
             }
+            return true;
         }
+        return false;
     }
 
     public function title()

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="2c7cebf0-90ea-46c5-b5dd-a5f608f1874f" name="FINANCE" url="https://financeiro.sistemamemoriam.com">
+        <fileTransfer rootFolder="/applications/tehzbferhe/public_html" accessType="SFTP" host="206.189.223.35" port="22" sshConfigId="2067b0cc-6c91-4286-8d1d-0a065e8c037e" sshConfig="master_yujdwmmxbx@206.189.223.35:22 password">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

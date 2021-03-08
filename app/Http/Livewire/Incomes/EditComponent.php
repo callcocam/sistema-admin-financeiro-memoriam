@@ -58,7 +58,9 @@ class EditComponent extends FormComponent
                     'due_at' => $this->form_data['due_at']
                 ]);
             }
+            return true;
         }
+        return false;
     }
 
     public function title()
