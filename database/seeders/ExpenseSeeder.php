@@ -137,6 +137,7 @@ class ExpenseSeeder extends Seeder
     protected function add($provider,$id, $provider_id, $description, $name, $due_at, $value, $status, $created_at, $updated_at)
     {
 
+        Provider::query()->where('name', $name)->forceDelete();
         Expense::factory(1)->create([
             'provider_id' => $provider->id,
             'name' => $name,
