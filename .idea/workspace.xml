@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b58900c3-9826-4331-95de-9a25ea457358" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/app/Http/Livewire/Expenses/CreateComponent.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Livewire/Expenses/CreateComponent.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Livewire/Incomes/CreateComponent.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Livewire/Incomes/CreateComponent.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Livewire/Clients/EditComponent.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Livewire/Clients/EditComponent.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -172,7 +171,7 @@
       <workItem from="1614689996421" duration="6041000" />
       <workItem from="1614715272805" duration="1000000" />
       <workItem from="1614716324847" duration="1639000" />
-      <workItem from="1614792224536" duration="42249000" />
+      <workItem from="1614792224536" duration="43013000" />
     </task>
     <servers />
   </component>

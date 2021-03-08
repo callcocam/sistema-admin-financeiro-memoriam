@@ -23,6 +23,7 @@ class EditComponent extends FormComponent
     public function mount(Client $client, ClientService $clientService)
     {
         $service = $clientService->edit($client->id)->object();
+        dd($service);
         $client->cnpj = $service->cnpj ?? null;
         $client->email = $service->email ?? null;
         $client->phone = $service->phone ?? null;
