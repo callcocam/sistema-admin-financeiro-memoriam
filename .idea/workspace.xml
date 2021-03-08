@@ -2,15 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b58900c3-9826-4331-95de-9a25ea457358" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Livewire/Expenses/EditComponent.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Livewire/Expenses/EditComponent.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Livewire/Expenses/ListComponent.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Livewire/Expenses/ListComponent.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Livewire/Incomes/EditComponent.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Livewire/Incomes/EditComponent.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Livewire/Incomes/ListComponent.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Livewire/Incomes/ListComponent.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/SIGA/Table/Traits/Sorting.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/SIGA/Table/Traits/Sorting.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeders/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeders/DatabaseSeeder.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeders/ExpenseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeders/ExpenseSeeder.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeders/IncomeSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeders/IncomeSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Livewire/Expenses/CreateComponent.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Livewire/Expenses/CreateComponent.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Livewire/Incomes/CreateComponent.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Livewire/Incomes/CreateComponent.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -179,7 +172,7 @@
       <workItem from="1614689996421" duration="6041000" />
       <workItem from="1614715272805" duration="1000000" />
       <workItem from="1614716324847" duration="1639000" />
-      <workItem from="1614792224536" duration="41388000" />
+      <workItem from="1614792224536" duration="42249000" />
     </task>
     <servers />
   </component>
