@@ -15,7 +15,7 @@ class Expense extends AbstractModel
 {
     use HasFactory, UuidGenerate;
 
-    protected $fillable = ['provider_id'];
+    protected $guarded = ['id'];
 
     public function finance()
     {

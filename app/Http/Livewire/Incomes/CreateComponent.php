@@ -9,6 +9,7 @@ namespace App\Http\Livewire\Incomes;
 
 use App\Models\Client;
 use App\Models\Income;
+use SIGA\Form\Fields\Hidden;
 use SIGA\Form\Fields\Radio;
 use SIGA\Form\Fields\Select;
 use SIGA\Form\Fields\Text;
@@ -47,11 +48,12 @@ class CreateComponent extends FormComponent
     public function fields()
     {
         return [
+            Hidden::make('ordering')->default(Income::query()->max('ordering')+1),
             Select::make('client_id')->target(Client::query(), $this->isSingleSelectSearch('client_id')),
             Text::make('Value')->attribute('autocomplete', 'off'),
             Text::make('due_at')->type('date'),
             Textarea::make('Description'),
-            Radio::make('status')->options(['published', 'draft'], true)
+            Radio::make('status')->options(['draft', 'published'])->default('published')
         ];
     }
 }

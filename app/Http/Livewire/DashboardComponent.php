@@ -85,7 +85,6 @@ class DashboardComponent extends AbstractComponent
     {
 
         $incomes = \App\Models\Income::all();
-
         $total = 0;
         foreach ($incomes as $income) {
             $finance = $income->finance()->whereIn('status',$status)->whereBetween($field, [

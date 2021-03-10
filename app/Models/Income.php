@@ -14,7 +14,7 @@ class Income extends AbstractModel
 {
     use HasFactory, UuidGenerate;
 
-    protected $fillable = ['client_id'];
+    protected $guarded = ['id'];
 
 
     public function finance()
