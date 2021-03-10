@@ -25,6 +25,9 @@ class ListComponent extends TableComponent
        return [
            Column::make('name')->sortable()->searchable(),
            Column::make('interval')->sortable(),
+           Column::make('Assinaturas')->format(function ($model){
+               return $model->signature ? $model->signature->count():0;
+           }),
            Column::make('action')->actions($this->route())
        ];
     }
