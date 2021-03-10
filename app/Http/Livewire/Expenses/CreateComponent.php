@@ -38,7 +38,7 @@ class CreateComponent extends FormComponent
             Text::make('Value')->attribute('autocomplete', 'off'),
             Text::make('due_at')->type('date'),
             Textarea::make('Description'),
-            Radio::make('status')->options(['draft', 'published'])->default('published')
+            Radio::make('status')->options(['published', 'draft'])->default('published')
         ];
     }
 
