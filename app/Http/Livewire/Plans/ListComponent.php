@@ -38,4 +38,9 @@ class ListComponent extends TableComponent
     {
         return "plans";
     }
+
+
+    public function isShowLabel(){
+        return "Assinaturas";
+    }
 }

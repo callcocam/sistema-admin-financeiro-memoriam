@@ -8,6 +8,7 @@
 namespace SIGA;
 
 
+use SIGA\Show\ShowServiceProvider;
 use Illuminate\Support\ServiceProvider;
 use SIGA\Console\Commands\CreateCommand;
 use SIGA\Console\Commands\EditCommand;
@@ -31,6 +32,7 @@ class SigaLivewireServiceProvider extends ServiceProvider
       $this->app->register(FlashServiceProvider::class);
       $this->app->register(LivewireTablesServiceProvide::class);
       $this->app->register(FormServiceProvider::class);
+      $this->app->register(ShowServiceProvider::class);
     }
 
     public function boot(){

@@ -30,7 +30,7 @@ Route::middleware('auth')->group(function (){
 
     Route::get('/load-clients-api', function (\App\Services\ClientService $clientService) {
         $clients = $clientService->get();
-        \App\Models\Client::query()->forceDelete();
+        //\App\Models\Client::query()->forceDelete();
         foreach ($clients as $client){
             if (!\App\Models\Client::query()->find( $client->id)){
                 \App\Models\Client::factory(1)->create([
@@ -79,7 +79,7 @@ Route::middleware('auth')->group(function (){
     Route::get('planos', \App\Http\Livewire\Plans\ListComponent::class)->name('admin.plans.index');
     Route::get('planos/create', \App\Http\Livewire\Plans\CreateComponent::class)->name('admin.plans.create');
     Route::get('planos/{plan}/edit', \App\Http\Livewire\Plans\EditComponent::class)->name('admin.plans.edit');
-    //Route::get('roles/{role}/show', \App\Http\Livewire\Permissions\ShowComponent::class)->name('admin.roles.show');
+    Route::get('planos/{plan}/show', \App\Http\Livewire\Plans\ShowComponent::class)->name('admin.plans.show');
 
     Route::get('clientes', \App\Http\Livewire\Clients\ListComponent::class)->name('admin.clients.index');
     Route::get('clientes/cadastrar', \App\Http\Livewire\Clients\CreateComponent::class)->name('admin.clients.create');

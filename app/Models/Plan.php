@@ -19,4 +19,9 @@ class Plan extends AbstractModel
      * @var array
      */
     protected $fillable = ['name', 'slug', 'description', 'interval', 'repeats', 'status'];
+
+    public function signature(){
+
+        return $this->belongsToMany(Client::class)->using(ClientPlan::class);
+    }
 }

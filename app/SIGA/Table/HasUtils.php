@@ -68,4 +68,25 @@ trait HasUtils
         return 'actions.reload';
     }
 
+
+
+    public function actions_table(){
+        return [];
+    }
+
+    public function isShowLabel(){
+        return trans('strings.show');
+    }
+
+    public function isEditLabel(){
+        return trans('strings.edit');
+    }
+
+    public function isDeleteLabel(){
+        return trans('strings.delete');
+    }
+    public function isConfirmLabel(){
+        return trans('strings.confirm');
+    }
+
 }
