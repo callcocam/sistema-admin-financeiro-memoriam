@@ -23,7 +23,7 @@ class DatabaseSeeder extends Seeder
 //
         //$this->call(RoleSeeder::class);
         //$this->call(ClientSeeder::class);
-        $this->call(ExpenseSeeder::class);
+        // $this->call(ExpenseSeeder::class);
         $this->call(IncomeSeeder::class);
       // \App\Models\User::factory(500)->create();
     }
