@@ -100,13 +100,16 @@
                                                     <div class="ml-4">
                                                         <div
                                                             class="text-sm leading-5 font-medium text-gray-900">{{ $signature->name }}</div>
-                                                        <div class="text-sm leading-5 text-gray-500">john@example.com
-                                                        </div>
+                                                        @isset($signature->email)
+                                                            <div class="text-sm leading-5 text-gray-500">
+                                                                {{ $signature->email }}
+                                                            </div>
+                                                        @endisset
                                                     </div>
                                                 </div>
                                             </td>
                                             <td class="px-6 py-4 whitespace-no-wrap border-b border-gray-200">
-                                                @if($signature->status == "draft")
+                                                @if($signature->pivot->status == "draft")
                                                     <span
                                                         class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-red-100 text-red-800">Active</span>
                                                 @else
@@ -117,7 +120,10 @@
                                             </td>
 
                                             <td class="px-6 py-4 whitespace-no-wrap text-right border-b border-gray-200 text-sm leading-5 font-medium">
-                                                <button type="button" wire:click="removeSignature('{{ $signature->id }}')" class="text-indigo-600 hover:text-indigo-900">Remover</button>
+                                                <button type="button"
+                                                        wire:click="removeSignature('{{ $signature->id }}')"
+                                                        class="text-indigo-600 hover:text-indigo-900">Remover
+                                                </button>
                                             </td>
                                         </tr>
                                     @endforeach

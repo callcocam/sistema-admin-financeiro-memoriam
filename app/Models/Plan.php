@@ -22,6 +22,6 @@ class Plan extends AbstractModel
 
     public function signature(){
 
-        return $this->belongsToMany(Client::class)->using(ClientPlan::class);
+        return $this->belongsToMany(Client::class)->using(ClientPlan::class)->withTimestamps()->withPivot('status');
     }
 }

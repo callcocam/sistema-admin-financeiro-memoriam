@@ -37,7 +37,7 @@ class ShowComponent extends AbstractShowComponent
             $this->search= null;
             $this->idSelected= null;
             $this->nameSelected= null;
-            $this->signatures = $this->model->signature;
+            $this->signatures = Plan::find($this->model->id)->signature;
         } catch (\Exception $exception) {
             flash($exception->getMessage(), 'danger')->dismissable()->livewire($this);
         }
@@ -50,7 +50,7 @@ class ShowComponent extends AbstractShowComponent
             $this->search= null;
             $this->idSelected= null;
             $this->nameSelected= null;
-            $this->signatures = $this->model->signature;
+            $this->signatures = Plan::find($this->model->id)->signature;
             flash('Asinatura removida com suceeso', 'success')->dismissable()->livewire($this);
         } catch (\Exception $exception) {
             flash($exception->getMessage(), 'danger')->dismissable()->livewire($this);
