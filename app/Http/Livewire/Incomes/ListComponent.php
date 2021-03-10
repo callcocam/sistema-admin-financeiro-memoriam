@@ -42,7 +42,7 @@ class ListComponent extends TableComponent
     {
        return [
            Column::make('name')->format(function ($model){
-               return $model->client->name;
+               return $model->client ? $model->client->name:'--';
            }),
            Column::make('value')->format(function ($model){
                return $model->finance? form_read($model->finance->value): '0,0';

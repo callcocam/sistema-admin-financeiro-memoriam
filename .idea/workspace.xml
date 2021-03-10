@@ -2,19 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b58900c3-9826-4331-95de-9a25ea457358" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/SIGA/Show/ShowComponent.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/SIGA/Show/ShowServiceProvider.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/SIGA/Show/config/laravel-livewire-show.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/SIGA/Show/resources/views/show.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/SIGA/Show/routes/show.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/stubs/livewire.show.stub" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Livewire/Plans/ListComponent.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Livewire/Plans/ListComponent.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/Plan.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Plan.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/SIGA/SigaLivewireServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/SIGA/SigaLivewireServiceProvider.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/SIGA/Table/HasUtils.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/SIGA/Table/HasUtils.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/SIGA/Table/resources/views/tailwind/includes/actions.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/SIGA/Table/resources/views/tailwind/includes/actions.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Livewire/Incomes/ListComponent.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Livewire/Incomes/ListComponent.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -191,7 +180,7 @@
       <workItem from="1614715272805" duration="1000000" />
       <workItem from="1614716324847" duration="1639000" />
       <workItem from="1614792224536" duration="57065000" />
-      <workItem from="1615376748929" duration="12270000" />
+      <workItem from="1615376748929" duration="13162000" />
     </task>
     <servers />
   </component>
