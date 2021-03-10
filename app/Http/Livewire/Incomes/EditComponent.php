@@ -66,7 +66,7 @@ class EditComponent extends FormComponent
     public function title()
     {
         if ($this->model->exists)
-            return sprintf('Editar receita: %s', $this->model->client->name);
+            return sprintf('Editar receita: %s', $this->model->client? $this->model->client->name:'');
 
         return parent::title();
     }
