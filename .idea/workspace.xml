@@ -7,6 +7,7 @@
       <change beforePath="$PROJECT_DIR$/.env.example" beforeDir="false" afterPath="$PROJECT_DIR$/.env.example" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gitattributes" beforeDir="false" afterPath="$PROJECT_DIR$/.gitattributes" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.project" beforeDir="false" afterPath="$PROJECT_DIR$/.project" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.settings/org.eclipse.wst.validation.prefs" beforeDir="false" afterPath="$PROJECT_DIR$/.settings/org.eclipse.wst.validation.prefs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.styleci.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.styleci.yml" afterDir="false" />
@@ -22,7 +23,6 @@
       <change beforePath="$PROJECT_DIR$/app/Http/Livewire/Auth/Password/Reset.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Livewire/Auth/Password/Reset.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Livewire/Companies/EditComponent.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Livewire/Companies/EditComponent.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Livewire/Companies/ListComponent.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Livewire/Companies/ListComponent.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Livewire/Incomes/ListComponent.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Livewire/Incomes/ListComponent.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Livewire/Permissions/CreateComponent.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Livewire/Permissions/CreateComponent.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Livewire/Permissions/EditComponent.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Livewire/Permissions/EditComponent.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Livewire/Permissions/ListComponent.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Livewire/Permissions/ListComponent.php" afterDir="false" />
@@ -45,6 +45,7 @@
       <change beforePath="$PROJECT_DIR$/app/Http/Middleware/TrustHosts.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Middleware/TrustHosts.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Middleware/TrustProxies.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Middleware/TrustProxies.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Middleware/VerifyCsrfToken.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Middleware/VerifyCsrfToken.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Client.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Client.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Models/Permission.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Permission.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Models/Plan.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Plan.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Models/Role.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Role.php" afterDir="false" />
@@ -1494,7 +1495,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1617016527516</updated>
-      <workItem from="1617016529838" duration="3913000" />
+      <workItem from="1617016529838" duration="5686000" />
     </task>
     <servers />
   </component>

@@ -9,6 +9,7 @@ namespace SIGA\Form\Fields;
 
 
 use Illuminate\Database\Eloquent\Builder;
+use Illuminate\Support\Facades\DB;
 use SIGA\Form\BaseField;
 
 class Select extends BaseField
@@ -83,7 +84,7 @@ class Select extends BaseField
         }
         else{
             if(is_array($label)){
-                $label = $label[0];
+                $label = DB::raw(sprintf('CONCAT(%s," - ",%s) AS name', $label[0], $label[1]));
             }
         }
         $this->options($query->pluck($key, $label)->toArray());

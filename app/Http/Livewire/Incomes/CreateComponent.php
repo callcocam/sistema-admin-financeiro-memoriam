@@ -49,7 +49,7 @@ class CreateComponent extends FormComponent
     {
         return [
             Hidden::make('ordering')->default(Income::query()->max('ordering')+1),
-            Select::make('client_id')->target(Client::query(), $this->isSingleSelectSearch('client_id')),
+            Select::make('client_id')->target(Client::query(), $this->isSingleSelectSearch('client_id'),['name','document']),
             Text::make('Value')->attribute('autocomplete', 'off'),
             Text::make('due_at')->type('date'),
             Textarea::make('Description'),
