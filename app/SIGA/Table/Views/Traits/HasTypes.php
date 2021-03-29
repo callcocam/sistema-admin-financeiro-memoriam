@@ -11,6 +11,7 @@ namespace SIGA\Table\Views\Traits;
 trait HasTypes
 {
 
+    protected $queryString = [];
     public function status()
     {
         return $this->format(function ($model, $column) {
@@ -35,7 +36,14 @@ trait HasTypes
                 'route' => $route,
                 'model' => $model,
                 'column' => $column,
+                'query' => $this->queryString,
             ]);
         });//->hideIf(auth()->user()->cannot($permission));
+    }
+
+    public function queryString($queryString){
+
+        $this->queryString = $queryString;
+        return $this;
     }
 }

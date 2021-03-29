@@ -52,7 +52,7 @@ class ListComponent extends TableComponent
            }),
            Column::make('status')->view('status'),
            //
-           Column::make('action')->actions($this->route())
+           Column::make('action')->queryString(request()->query())->actions($this->route())
        ];
     }
 

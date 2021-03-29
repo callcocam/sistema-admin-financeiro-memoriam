@@ -24,12 +24,12 @@ trait HasUtils
         return $this->views_table(sprintf(".includes.%s", $view));
     }
 
-    public function actionLink($model, $action)
+    public function actionLink($model, $action,$query=[])
     {
         if ($this->permission($action)) {
             if (Route::has(sprintf('admin.%s.%s', $this->route(), $action))) {
                 return route(sprintf('admin.%s.%s', $this->route(), $action), array_merge(
-                    [$this->getRouteKeyName() => $model], request()->query()
+                    [$this->getRouteKeyName() => $model], request()->query(),$query
                 ));
             }
         }

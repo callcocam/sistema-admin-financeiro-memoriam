@@ -71,9 +71,21 @@ class Select extends BaseField
             $query = app($query);
         }
         if ($where) {
-            $query->where($label, 'like', '%' . $where . '%');
+            if(is_array($label)){
+                foreach ($label as $value){
+                    $query->orWhere($value, 'like', '%' . $where . '%');
+                }
+                $label = $label[0];
+            }
+            else{
+                $query->where($label, 'like', '%' . $where . '%');
+            }
         }
-
+        else{
+            if(is_array($label)){
+                $label = $label[0];
+            }
+        }
         $this->options($query->pluck($key, $label)->toArray());
 
         return $this;

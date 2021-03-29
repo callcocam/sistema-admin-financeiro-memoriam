@@ -38,7 +38,7 @@ class EditComponent extends FormComponent
     public function fields()
     {
         return [
-            Select::make('Cliente','client_id')->target(Client::query()->orderBy('name'), $this->isSingleSelectSearch('client_id')),
+            Select::make('Cliente','client_id')->target(Client::query()->orderBy('name'), $this->isSingleSelectSearch('client_id'),['name','document']),
             Text::make('Cliente', 'name')->attribute('readonly', true),
             Text::make('Valor', 'value'),
             Text::make('Data de Vencimento', 'due_at')->type('date'),

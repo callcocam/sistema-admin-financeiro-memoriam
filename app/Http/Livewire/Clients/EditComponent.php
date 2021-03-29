@@ -43,6 +43,7 @@ class EditComponent extends FormComponent
     {
         return [
             Text::make('name'),
+            Text::make('document'),
             Text::make('cnpj'),
             Text::make('email'),
             Text::make('phone'),

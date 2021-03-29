@@ -34,11 +34,11 @@ Route::middleware('auth')->group(function (){
         foreach ($clients as $client){
             $new = \App\Models\Client::query()->find( $client->id);
             if (!$new){
-//                \App\Models\Client::factory(1)->create([
-//                   'id'=>$client->id,
-//                   'name'=>$client->name,
-//                   'document'=>$client->cnpj,
-//                ]);
+                \App\Models\Client::factory(1)->create([
+                   'id'=>$client->id,
+                   'name'=>$client->name,
+                   'document'=>$client->cnpj,
+                ]);
             }
             else{
                 $new->name = $client->name;
