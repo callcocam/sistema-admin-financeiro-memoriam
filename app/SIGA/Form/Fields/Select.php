@@ -76,7 +76,7 @@ class Select extends BaseField
                 foreach ($label as $value){
                     $query->orWhere($value, 'like', '%' . $where . '%');
                 }
-                $label = $label[0];
+                $label = DB::raw(sprintf('CONCAT(%s," - ",%s) AS name', $label[0], $label[1]));
             }
             else{
                 $query->where($label, 'like', '%' . $where . '%');
