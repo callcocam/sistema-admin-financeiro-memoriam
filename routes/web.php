@@ -32,11 +32,18 @@ Route::middleware('auth')->group(function (){
         $clients = $clientService->get();
         //\App\Models\Client::query()->forceDelete();
         foreach ($clients as $client){
-            if (!\App\Models\Client::query()->find( $client->id)){
-                \App\Models\Client::factory(1)->create([
-                   'id'=>$client->id,
-                   'name'=>$client->name
-                ]);
+            $new = \App\Models\Client::query()->find( $client->id);
+            if (!$new){
+//                \App\Models\Client::factory(1)->create([
+//                   'id'=>$client->id,
+//                   'name'=>$client->name,
+//                   'document'=>$client->cnpj,
+//                ]);
+            }
+            else{
+                $new->name = $client->name;
+                $new->document = $client->cnpj;
+                $new->save();
             }
         }
         return redirect()->route('admin.clients.index');
