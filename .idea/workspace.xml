@@ -23,7 +23,7 @@
       <change beforePath="$PROJECT_DIR$/app/Http/Livewire/Auth/Password/Reset.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Livewire/Auth/Password/Reset.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Livewire/Companies/EditComponent.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Livewire/Companies/EditComponent.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Livewire/Companies/ListComponent.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Livewire/Companies/ListComponent.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Livewire/Incomes/CreateComponent.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Livewire/Incomes/CreateComponent.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Livewire/DashboardComponent.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Livewire/DashboardComponent.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Livewire/Permissions/CreateComponent.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Livewire/Permissions/CreateComponent.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Livewire/Permissions/EditComponent.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Livewire/Permissions/EditComponent.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Livewire/Permissions/ListComponent.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Livewire/Permissions/ListComponent.php" afterDir="false" />
@@ -1300,6 +1300,7 @@
       <change beforePath="$PROJECT_DIR$/resources/views/livewire/auth/password/reset.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/auth/password/reset.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/livewire/companies/edit-component.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/companies/edit-component.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/livewire/companies/list-component.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/companies/list-component.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/livewire/dashboard.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/dashboard.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/livewire/permissions/create-component.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/permissions/create-component.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/livewire/permissions/edit-component.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/permissions/edit-component.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/livewire/permissions/list-component.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/permissions/list-component.blade.php" afterDir="false" />
@@ -1351,7 +1352,7 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ComposerSettings">
+  <component name="ComposerSettings" doNotAsk="true">
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
     <execution />
   </component>
@@ -1495,7 +1496,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1617016527516</updated>
-      <workItem from="1617016529838" duration="6607000" />
+      <workItem from="1617016529838" duration="9712000" />
+      <workItem from="1617133488574" duration="1382000" />
     </task>
     <servers />
   </component>
