@@ -74,6 +74,7 @@ abstract class TableComponent extends Component
      * @var bool|string
      */
     public $refresh = false;
+    protected $data;
 
     /**
      * Whether or not to display an offline message when there is no connection.
@@ -177,5 +178,19 @@ abstract class TableComponent extends Component
             'description' => 'Dashboard template built with tailwindcss 🛩',
             'collections' => [],
         ], $ThemeConfig);
+    }
+
+    public function render_modal(){
+        return false;
+    }
+
+    public function render_model(){
+        return [];
+    }
+
+
+    public function getModalProperty()
+    {
+        return $this->data;
     }
 }

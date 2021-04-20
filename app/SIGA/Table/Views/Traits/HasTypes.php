@@ -26,13 +26,13 @@ trait HasTypes
         return config(sprintf('laravel-livewire-tables.status.%s',$value),"bg-red-100 text-green-800");
     }
 
-    public function actions($route, $permission=null)
+    public function actions($route, $permission=null, $view = "actions")
     {
         if(is_null($permission))
             $permission = sprintf('admin.%s.index', $route);
 
-        return $this->format(function ($model, $column) use ($route) {
-            return view($this->views_include_table('actions'), [
+        return $this->format(function ($model, $column) use ($route,$view) {
+            return view($this->views_include_table($view), [
                 'route' => $route,
                 'model' => $model,
                 'column' => $column,

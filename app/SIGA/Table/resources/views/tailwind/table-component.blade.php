@@ -34,4 +34,9 @@
             @include(table_includes('loading'))
     </div>
 </div>
+    @if($this->render_modal())
+        @if($this->modal)
+            @livewire($this->render_modal(), $this->render_model())
+        @endif
+    @endif
 </div>

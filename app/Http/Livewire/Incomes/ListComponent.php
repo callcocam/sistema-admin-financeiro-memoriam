@@ -15,6 +15,9 @@ use SIGA\Table\Views\Column;
 class ListComponent extends TableComponent
 {
 
+    protected $listeners = [
+        "close_modal"
+    ];
     /**
      * Sorting.
      */
@@ -52,7 +55,7 @@ class ListComponent extends TableComponent
            }),
            Column::make('status')->view('status'),
            //
-           Column::make('action')->queryString(request()->query())->actions($this->route())
+           Column::make('action')->queryString(request()->query())->actions($this->route(), null, 'actions-modal')
        ];
     }
 
@@ -66,6 +69,21 @@ class ListComponent extends TableComponent
         return "incomes";
     }
 
+    public function open_editor($id){
+        $this->data = $this->query()->find($id);
+    }
+    public function render_modal(){
+        return 'incomes.edit-component';
+    }
 
+    public function render_model(){
+        return [
+            'income' =>$this->data
+        ];
+    }
 
+    public function close_modal()
+    {
+        $this->data = null;
+    }
 }

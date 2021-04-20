@@ -70,4 +70,13 @@ class EditComponent extends FormComponent
 
         return parent::title();
     }
+
+    /**
+     * @return string
+     */
+    public function formView()
+    {
+        return 'livewire.incomes.edit-component';
+    }
+
 }

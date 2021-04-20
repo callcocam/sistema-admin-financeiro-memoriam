@@ -121,6 +121,7 @@ class FormComponent extends Component
         ];
         $fields = $this->elements();
         return view($this->formView())
+            ->with('modal', $this->model)
             ->with('fields', $fields)
             ->with($fields)
             ->layout($this->layout(), $ThemeConfig);
@@ -246,4 +247,8 @@ class FormComponent extends Component
         return Str::singular(Str::replaceFirst('-', '', $this->route));
     }
 
+    public function close_modal()
+    {
+        $this->emit('close_modal');
+    }
 }

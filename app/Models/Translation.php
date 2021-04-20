@@ -64,7 +64,7 @@ class Translation extends AbstractModel
      *
      * @return string
      */
-    public function getTranslation(): ?string
+    public function getTranslation(): ? string
     {
        return $this->text;
     }
