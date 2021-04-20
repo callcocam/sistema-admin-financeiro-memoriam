@@ -20,30 +20,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="28fecd00-1c69-4805-a3fb-a8514b2ee5d0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/SIGA/Table/resources/views/tailwind/includes/actions-modal.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.env.example" beforeDir="false" afterPath="$PROJECT_DIR$/.env.example" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/deployment.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sistema-admin-financeiro-memoriam.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sistema-admin-financeiro-memoriam.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sshConfigs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/webServers.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.settings/org.eclipse.wst.validation.prefs" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Livewire/Incomes/EditComponent.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Livewire/Incomes/EditComponent.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Livewire/Incomes/ListComponent.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Livewire/Incomes/ListComponent.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/Translation.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Translation.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/SIGA/Form/FormComponent.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/SIGA/Form/FormComponent.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/SIGA/Table/TableComponent.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/SIGA/Table/TableComponent.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/SIGA/Table/Views/Traits/HasTypes.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/SIGA/Table/Views/Traits/HasTypes.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/SIGA/Table/resources/views/tailwind/includes/actions.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/SIGA/Table/resources/views/tailwind/includes/actions.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/SIGA/Table/resources/views/tailwind/table-component.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/SIGA/Table/resources/views/tailwind/table-component.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/SIGA/Translations/TranslationLoaderManager.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/SIGA/Translations/TranslationLoaderManager.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/SIGA/Translations/TranslationServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/SIGA/Translations/TranslationServiceProvider.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/livewire/incomes/create-component.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/incomes/create-component.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/livewire/incomes/edit-component.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/incomes/edit-component.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -217,7 +196,7 @@
       <workItem from="1618518698841" duration="176000" />
       <workItem from="1618614026633" duration="619000" />
       <workItem from="1618795314741" duration="2918000" />
-      <workItem from="1618855602503" duration="6928000" />
+      <workItem from="1618855602503" duration="9290000" />
     </task>
     <servers />
   </component>

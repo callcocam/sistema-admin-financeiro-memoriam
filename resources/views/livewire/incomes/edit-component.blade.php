@@ -45,6 +45,9 @@
                                                         <button class="btn btn-defaul" wire:click="saveAndEditStay" type="button">
                                                             <x-c-icon class="h-6 w-6 mr-2" icon="save" fill="currentColor"/> @lang('form.save')</button>
                                                     @endif
+                                                    <button class="btn btn-defaul" wire:click="saveAndCopy" type="button">
+                                                        <x-c-icon class="h-6 w-6 mr-2" icon="save" fill="currentColor"/> @lang('form.save-and-copy')
+                                                    </button>
                                                 @endif
                                             </div>
                                         </div>

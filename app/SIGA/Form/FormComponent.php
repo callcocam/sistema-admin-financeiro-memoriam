@@ -211,6 +211,17 @@ class FormComponent extends Component
         if ($this->submit())
             $this->saveAndStayResponse();
     }
+    /**
+     * Salvar e ir para outra view
+     */
+    public function saveAndCopy()
+    {
+        if ($this->submit()){
+            unset($this->form_data['id']);
+            $this->model->create($this->form_data);
+        }
+
+    }
 
     /**
      * @return \Illuminate\Http\RedirectResponse

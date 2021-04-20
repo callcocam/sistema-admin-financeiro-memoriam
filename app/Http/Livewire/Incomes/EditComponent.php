@@ -63,6 +63,26 @@ class EditComponent extends FormComponent
         return false;
     }
 
+    public function saveAndCopy()
+    {
+        if ($this->submit()){
+            $client = Client::find($this->form_data['client_id']);
+            if($client){
+                $this->form_data['name'] = $client->name;
+            }
+            unset($this->form_data['id']);
+            $this->model = $this->model->create($this->form_data);
+            $this->model->finance()->create([
+                'value' => form_w($this->form_data['value']),
+                'due_at' => $this->form_data['due_at'],
+                'status' => $this->form_data['status'],
+                'description' => $this->form_data['description'],
+            ]);
+            $this->setFormProperties($this->model);
+        }
+
+    }
+
     public function title()
     {
         if ($this->model->exists)
