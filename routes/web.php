@@ -1,7 +1,9 @@
 <?php
 
+use App\Models\Permission;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Http\Request;
+use SIGA\Acl\Helpers\LoadRouterHelper;
 
 /*
 |--------------------------------------------------------------------------
@@ -49,6 +51,32 @@ Route::middleware('auth')->group(function (){
         return redirect()->route('admin.clients.index');
     })->name('admin.load-clients.api');
 
+
+    /**
+     * Destroy an authenticated session.
+     *
+     * @param  \Illuminate\Http\Request  $request
+     * @return \Illuminate\Http\RedirectResponse
+     */
+    Route::get('/generate-permissions', function (Request $request) {
+
+        $routes = LoadRouterHelper::make();
+        if ($routes):
+            foreach ($routes as $route):
+                if (!Permission::query()->where('slug', $route)->count()):
+                    $explode = explode(".", $route);
+                    $last = last($explode);
+                    $name = str_replace(".", " ", \Illuminate\Support\Str::title($route));
+                    Permission::factory()->create([
+                        'name' => $name,
+                        'slug' => $route,
+                        'grupo' => $last,
+                        'description' => $name
+                    ]);
+                endif;
+            endforeach;
+        endif;
+    });
 
     /**
      * Destroy an authenticated session.
