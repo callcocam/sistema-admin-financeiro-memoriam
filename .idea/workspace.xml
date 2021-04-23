@@ -19,10 +19,8 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="28fecd00-1c69-4805-a3fb-a8514b2ee5d0" name="Default Changelist" comment="">
+    <list default="true" id="28fecd00-1c69-4805-a3fb-a8514b2ee5d0" name="Default Changelist" comment="generate -permissions">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeders/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeders/DatabaseSeeder.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -156,7 +154,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../siga-plataforma-de-cursos" />
+    <property name="last_opened_file_path" value="E:/www/idelaadesivos" />
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="RecentsManager">
@@ -196,8 +194,17 @@
       <workItem from="1618614026633" duration="619000" />
       <workItem from="1618795314741" duration="2918000" />
       <workItem from="1618855602503" duration="13292000" />
-      <workItem from="1619102596877" duration="405000" />
+      <workItem from="1619102596877" duration="1232000" />
+      <workItem from="1619123804849" duration="678000" />
     </task>
+    <task id="LOCAL-00001" summary="generate -permissions">
+      <created>1619103031455</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1619103031455</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -215,11 +222,23 @@
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="generate -permissions" />
+    <option name="LAST_COMMIT_MESSAGE" value="generate -permissions" />
+  </component>
   <component name="WindowStateProjectService">
-    <state x="1480" y="166" key="FileChooserDialogImpl" timestamp="1618932530279">
+    <state x="1488" y="206" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1619102986265">
+      <screen x="1024" y="0" width="1600" height="1024" />
+    </state>
+    <state x="1488" y="206" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1024.728/1024.0.1600.1024@1024.0.1600.1024" timestamp="1619102986265" />
+    <state x="1480" y="166" key="FileChooserDialogImpl" timestamp="1619126267047">
       <screen x="1024" y="0" width="1600" height="1024" />
     </state>
     <state x="292" y="118" key="FileChooserDialogImpl/0.0.1024.728/1024.0.1600.1024@0.0.1024.728" timestamp="1617798784874" />
-    <state x="1480" y="166" key="FileChooserDialogImpl/0.0.1024.728/1024.0.1600.1024@1024.0.1600.1024" timestamp="1618932530279" />
+    <state x="1480" y="166" key="FileChooserDialogImpl/0.0.1024.728/1024.0.1600.1024@1024.0.1600.1024" timestamp="1619126267047" />
+    <state x="1316" y="178" key="Vcs.Push.Dialog.v2" timestamp="1619103039738">
+      <screen x="1024" y="0" width="1600" height="1024" />
+    </state>
+    <state x="1316" y="178" key="Vcs.Push.Dialog.v2/0.0.1024.728/1024.0.1600.1024@1024.0.1600.1024" timestamp="1619103039738" />
   </component>
 </project>

@@ -7,6 +7,7 @@
 
 namespace App\Http\Livewire\Users;
 
+use Illuminate\Support\Facades\Hash;
 use SIGA\Form\FormComponent;
 use App\Models\User;
 use SIGA\Form\Fields\Text;
@@ -40,7 +41,11 @@ class EditComponent extends FormComponent
 
     public function success()
     {
-        if(parent::success()){
+        if (isset($this->form_data['password']) && $this->form_data['password'])
+            $this->form_data['password'] = Hash::make($this->form_data['password']);
+        else
+            unset($this->form_data['password']);
+        if (parent::success()) {
 
             return true;
         }
